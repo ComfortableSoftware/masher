@@ -94,18 +94,18 @@ EMPTYSTRLST = [None, "", DBLQT, f"""{DBLQT}{DBLQT}""", SGLQT, f"""{SGLQT}{SGLQT}
 FM_NAME = "newFM.py"
 FMTOP_NAME = f"""{CONFIGDIR}FMTOP.py"""
 FO_NAME = "newFO.py"
-FOLD1ENDHERE = f"""# fold here {"⥣1" * (FOLDLEN // 2)}"""
-FOLD1ENDHERELN = f"""# fold here {"⥣1" * (FOLDLEN // 2)}{NEWLINE}"""
-FOLD1STARTHERE = f"""# fold here {"⥥1" * (FOLDLEN // 2)}"""
-FOLD1STARTHERELN = f"""# fold here {"⥥1" * (FOLDLEN // 2)}{NEWLINE}"""
-FOLD2ENDHERE = f"""# fold here {"⥣2" * (FOLDLEN // 2)}"""
-FOLD2ENDHERELN = f"""# fold here {"⥣2" * (FOLDLEN // 2)}{NEWLINE}"""
-FOLD2STARTHERE = f"""# fold here {"⥥2" * (FOLDLEN // 2)}"""
-FOLD2STARTHERELN = f"""# fold here {"⥥2" * (FOLDLEN // 2)}{NEWLINE}"""
-FOLD3ENDHERE = f"""# fold here {"⥣3" * (FOLDLEN // 2)}"""
-FOLD3ENDHERELN = f"""# fold here {"⥣3" * (FOLDLEN // 2)}{NEWLINE}"""
-FOLD3STARTHERE = f"""# fold here {"⥥3" * (FOLDLEN // 2)}"""
-FOLD3STARTHERELN = f"""# fold here {"⥥3" * (FOLDLEN // 2)}{NEWLINE}"""
+FOLD1ENDHERE = f"""# fold here {"⟰1" * (FOLDLEN // 2)}"""
+FOLD1ENDHERELN = f"""# fold here {"⟰1" * (FOLDLEN // 2)}{NEWLINE}"""
+FOLD1STARTHERE = f"""# fold here {"⟱1" * (FOLDLEN // 2)}"""
+FOLD1STARTHERELN = f"""# fold here {"⟱1" * (FOLDLEN // 2)}{NEWLINE}"""
+FOLD2ENDHERE = f"""# fold here {"⟰2" * (FOLDLEN // 2)}"""
+FOLD2ENDHERELN = f"""# fold here {"⟰2" * (FOLDLEN // 2)}{NEWLINE}"""
+FOLD2STARTHERE = f"""# fold here {"⟱2" * (FOLDLEN // 2)}"""
+FOLD2STARTHERELN = f"""# fold here {"⟱2" * (FOLDLEN // 2)}{NEWLINE}"""
+FOLD3ENDHERE = f"""# fold here {"⟰3" * (FOLDLEN // 2)}"""
+FOLD3ENDHERELN = f"""# fold here {"⟰3" * (FOLDLEN // 2)}{NEWLINE}"""
+FOLD3STARTHERE = f"""# fold here {"⟱3" * (FOLDLEN // 2)}"""
+FOLD3STARTHERELN = f"""# fold here {"⟱3" * (FOLDLEN // 2)}{NEWLINE}"""
 FOTOP_NAME = f"""{CONFIGDIR}FOTOP.py"""
 HEX08 = lambda X_: f"""{X_:02H}"""  # {thisComment_}
 HEX16 = lambda X_: f"""{X_:04H}"""  # {thisComment_}
@@ -118,60 +118,60 @@ INFOSTR = f"""# * {"%_" * (CMNTLEN // 2)}"""  # INFO _STR_ line
 IO_NAME = "newIO.py"
 IOTOP_NAME = f"""{CONFIGDIR}IOTOP.py"""
 LINESUP = lambda NUM_: f"""{ESC}[{NUM_}A"""
-MARK1END = lambda TAG_: f"""# {"⥣1 " * (CMNTLEN // 3)} {TAG_}"""
-MARK1ENDLN = lambda TAG_: f"""# {"⥣1 " * (CMNTLEN // 3)} {TAG_}{NEWLINE}"""
-MARK1MID = lambda TAG_: f"""# {"⥣1⥥ " * (CMNTLEN // 4)} {TAG_}"""
-MARK1MIDLN = lambda TAG_: f"""# {"⥣1⥥ " * (CMNTLEN // 4)} {TAG_}{NEWLINE}"""
-MARK1START = lambda TAG_: f"""# {"1⥥ " * (CMNTLEN // 3)} {TAG_}"""
-MARK1STARTLN = lambda TAG_: f"""# {"1⥥ " * (CMNTLEN // 3)} {TAG_}{NEWLINE}"""
-MARK2END = lambda TAG_: f"""# {"⥣2 " * (CMNTLEN // 3)} {TAG_}"""
-MARK2ENDLN = lambda TAG_: f"""# {"⥣2 " * (CMNTLEN // 3)} {TAG_}{NEWLINE}"""
-MARK2MID = lambda TAG_: f"""# {"⥣2⥥ " * (CMNTLEN // 4)} {TAG_}"""
-MARK2MIDLN = lambda TAG_: f"""# {"⥣2⥥ " * (CMNTLEN // 4)} {TAG_}{NEWLINE}"""
-MARK2START = lambda TAG_: f"""# {"2⥥ " * (CMNTLEN // 3)} {TAG_}"""
-MARK2STARTLN = lambda TAG_: f"""# {"2⥥ " * (CMNTLEN // 3)} {TAG_}{NEWLINE}"""
-MARK3END = lambda TAG_: f"""# {"⥣3 " * (CMNTLEN // 3)} {TAG_}"""
-MARK3ENDLN = lambda TAG_: f"""# {"⥣3 " * (CMNTLEN // 3)} {TAG_}{NEWLINE}"""
-MARK3MID = lambda TAG_: f"""# {"⥣3⥥ " * (CMNTLEN // 4)} {TAG_}"""
-MARK3MIDLN = lambda TAG_: f"""# {"⥣3⥥ " * (CMNTLEN // 4)} {TAG_}{NEWLINE}"""
-MARK3START = lambda TAG_: f"""# {"3⥥ " * (CMNTLEN // 3)} {TAG_}"""
-MARK3STARTLN = lambda TAG_: f"""# {"3⥥ " * (CMNTLEN // 3)} {TAG_}{NEWLINE}"""
-MARK4END = lambda TAG_: f"""# {"⥣4 " * (CMNTLEN // 3)} {TAG_}"""
-MARK4ENDLN = lambda TAG_: f"""# {"⥣4 " * (CMNTLEN // 3)} {TAG_}{NEWLINE}"""
-MARK4MID = lambda TAG_: f"""# {"⥣4⥥ " * (CMNTLEN // 4)} {TAG_}"""
-MARK4MIDLN = lambda TAG_: f"""# {"⥣4⥥ " * (CMNTLEN // 4)} {TAG_}{NEWLINE}"""
-MARK4START = lambda TAG_: f"""# {"4⥥ " * (CMNTLEN // 3)} {TAG_}"""
-MARK4STARTLN = lambda TAG_: f"""# {"4⥥ " * (CMNTLEN // 3)} {TAG_}{NEWLINE}"""
-MARK5END = lambda TAG_: f"""# {"⥣5 " * (CMNTLEN // 3)} {TAG_}"""
-MARK5ENDLN = lambda TAG_: f"""# {"⥣5 " * (CMNTLEN // 3)} {TAG_}{NEWLINE}"""
-MARK5MID = lambda TAG_: f"""# {"⥣5⥥ " * (CMNTLEN // 4)} {TAG_}"""
-MARK5MIDLN = lambda TAG_: f"""# {"⥣5⥥ " * (CMNTLEN // 4)} {TAG_}{NEWLINE}"""
-MARK5START = lambda TAG_: f"""# {"5⥥ " * (CMNTLEN // 3)} {TAG_}"""
-MARK5STARTLN = lambda TAG_: f"""# {"5⥥ " * (CMNTLEN // 3)} {TAG_}{NEWLINE}"""
-MARK6END = lambda TAG_: f"""# {"⥣6 " * (CMNTLEN // 3)} {TAG_}"""
-MARK6ENDLN = lambda TAG_: f"""# {"⥣6 " * (CMNTLEN // 3)} {TAG_}{NEWLINE}"""
-MARK6MID = lambda TAG_: f"""# {"⥣6⥥ " * (CMNTLEN // 4)} {TAG_}"""
-MARK6MIDLN = lambda TAG_: f"""# {"⥣6⥥ " * (CMNTLEN // 4)} {TAG_}{NEWLINE}"""
-MARK6START = lambda TAG_: f"""# {"6⥥ " * (CMNTLEN // 3)} {TAG_}"""
-MARK6STARTLN = lambda TAG_: f"""# {"6⥥ " * (CMNTLEN // 3)} {TAG_}{NEWLINE}"""
-MARK7END = lambda TAG_: f"""# {"⥣7 " * (CMNTLEN // 3)} {TAG_}"""
-MARK7ENDLN = lambda TAG_: f"""# {"⥣7 " * (CMNTLEN // 3)} {TAG_}{NEWLINE}"""
-MARK7MID = lambda TAG_: f"""# {"⥣7⥥ " * (CMNTLEN // 4)} {TAG_}"""
-MARK7MIDLN = lambda TAG_: f"""# {"⥣7⥥ " * (CMNTLEN // 4)} {TAG_}{NEWLINE}"""
-MARK7START = lambda TAG_: f"""# {"7⥥ " * (CMNTLEN // 3)} {TAG_}"""
-MARK7STARTLN = lambda TAG_: f"""# {"7⥥ " * (CMNTLEN // 3)} {TAG_}{NEWLINE}"""
-MARK8END = lambda TAG_: f"""# {"⥣8 " * (CMNTLEN // 3)} {TAG_}"""
-MARK8ENDLN = lambda TAG_: f"""# {"⥣8 " * (CMNTLEN // 3)} {TAG_}{NEWLINE}"""
-MARK8MID = lambda TAG_: f"""# {"⥣8⥥ " * (CMNTLEN // 4)} {TAG_}"""
-MARK8MIDLN = lambda TAG_: f"""# {"⥣8⥥ " * (CMNTLEN // 4)} {TAG_}{NEWLINE}"""
-MARK8START = lambda TAG_: f"""# {"8⥥ " * (CMNTLEN // 3)} {TAG_}"""
-MARK8STARTLN = lambda TAG_: f"""# {"8⥥ " * (CMNTLEN // 3)} {TAG_}{NEWLINE}"""
-MARK9END = lambda TAG_: f"""# {"⥣9 " * (CMNTLEN // 3)} {TAG_}"""
-MARK9ENDLN = lambda TAG_: f"""# {"⥣9 " * (CMNTLEN // 3)} {TAG_}{NEWLINE}"""
-MARK9MID = lambda TAG_: f"""# {"⥣9⥥ " * (CMNTLEN // 4)} {TAG_}"""
-MARK9MIDLN = lambda TAG_: f"""# {"⥣9⥥ " * (CMNTLEN // 4)} {TAG_}{NEWLINE}"""
-MARK9START = lambda TAG_: f"""# {"9⥥ " * (CMNTLEN // 3)} {TAG_}"""
-MARK9STARTLN = lambda TAG_: f"""# {"9⥥ " * (CMNTLEN // 3)} {TAG_}{NEWLINE}"""
+MARK1END = lambda TAG_: f"""# {"⟰1 " * (CMNTLEN // 3)} {TAG_}"""
+MARK1ENDLN = lambda TAG_: f"""# {"⟰1 " * (CMNTLEN // 3)} {TAG_}{NEWLINE}"""
+MARK1MID = lambda TAG_: f"""# {"⟰1⟱ " * (CMNTLEN // 4)} {TAG_}"""
+MARK1MIDLN = lambda TAG_: f"""# {"⟰1⟱ " * (CMNTLEN // 4)} {TAG_}{NEWLINE}"""
+MARK1START = lambda TAG_: f"""# {"1⟱ " * (CMNTLEN // 3)} {TAG_}"""
+MARK1STARTLN = lambda TAG_: f"""# {"1⟱ " * (CMNTLEN // 3)} {TAG_}{NEWLINE}"""
+MARK2END = lambda TAG_: f"""# {"⟰2 " * (CMNTLEN // 3)} {TAG_}"""
+MARK2ENDLN = lambda TAG_: f"""# {"⟰2 " * (CMNTLEN // 3)} {TAG_}{NEWLINE}"""
+MARK2MID = lambda TAG_: f"""# {"⟰2⟱ " * (CMNTLEN // 4)} {TAG_}"""
+MARK2MIDLN = lambda TAG_: f"""# {"⟰2⟱ " * (CMNTLEN // 4)} {TAG_}{NEWLINE}"""
+MARK2START = lambda TAG_: f"""# {"2⟱ " * (CMNTLEN // 3)} {TAG_}"""
+MARK2STARTLN = lambda TAG_: f"""# {"2⟱ " * (CMNTLEN // 3)} {TAG_}{NEWLINE}"""
+MARK3END = lambda TAG_: f"""# {"⟰3 " * (CMNTLEN // 3)} {TAG_}"""
+MARK3ENDLN = lambda TAG_: f"""# {"⟰3 " * (CMNTLEN // 3)} {TAG_}{NEWLINE}"""
+MARK3MID = lambda TAG_: f"""# {"⟰3⟱ " * (CMNTLEN // 4)} {TAG_}"""
+MARK3MIDLN = lambda TAG_: f"""# {"⟰3⟱ " * (CMNTLEN // 4)} {TAG_}{NEWLINE}"""
+MARK3START = lambda TAG_: f"""# {"3⟱ " * (CMNTLEN // 3)} {TAG_}"""
+MARK3STARTLN = lambda TAG_: f"""# {"3⟱ " * (CMNTLEN // 3)} {TAG_}{NEWLINE}"""
+MARK4END = lambda TAG_: f"""# {"⟰4 " * (CMNTLEN // 3)} {TAG_}"""
+MARK4ENDLN = lambda TAG_: f"""# {"⟰4 " * (CMNTLEN // 3)} {TAG_}{NEWLINE}"""
+MARK4MID = lambda TAG_: f"""# {"⟰4⟱ " * (CMNTLEN // 4)} {TAG_}"""
+MARK4MIDLN = lambda TAG_: f"""# {"⟰4⟱ " * (CMNTLEN // 4)} {TAG_}{NEWLINE}"""
+MARK4START = lambda TAG_: f"""# {"4⟱ " * (CMNTLEN // 3)} {TAG_}"""
+MARK4STARTLN = lambda TAG_: f"""# {"4⟱ " * (CMNTLEN // 3)} {TAG_}{NEWLINE}"""
+MARK5END = lambda TAG_: f"""# {"⟰5 " * (CMNTLEN // 3)} {TAG_}"""
+MARK5ENDLN = lambda TAG_: f"""# {"⟰5 " * (CMNTLEN // 3)} {TAG_}{NEWLINE}"""
+MARK5MID = lambda TAG_: f"""# {"⟰5⟱ " * (CMNTLEN // 4)} {TAG_}"""
+MARK5MIDLN = lambda TAG_: f"""# {"⟰5⟱ " * (CMNTLEN // 4)} {TAG_}{NEWLINE}"""
+MARK5START = lambda TAG_: f"""# {"5⟱ " * (CMNTLEN // 3)} {TAG_}"""
+MARK5STARTLN = lambda TAG_: f"""# {"5⟱ " * (CMNTLEN // 3)} {TAG_}{NEWLINE}"""
+MARK6END = lambda TAG_: f"""# {"⟰6 " * (CMNTLEN // 3)} {TAG_}"""
+MARK6ENDLN = lambda TAG_: f"""# {"⟰6 " * (CMNTLEN // 3)} {TAG_}{NEWLINE}"""
+MARK6MID = lambda TAG_: f"""# {"⟰6⟱ " * (CMNTLEN // 4)} {TAG_}"""
+MARK6MIDLN = lambda TAG_: f"""# {"⟰6⟱ " * (CMNTLEN // 4)} {TAG_}{NEWLINE}"""
+MARK6START = lambda TAG_: f"""# {"6⟱ " * (CMNTLEN // 3)} {TAG_}"""
+MARK6STARTLN = lambda TAG_: f"""# {"6⟱ " * (CMNTLEN // 3)} {TAG_}{NEWLINE}"""
+MARK7END = lambda TAG_: f"""# {"⟰7 " * (CMNTLEN // 3)} {TAG_}"""
+MARK7ENDLN = lambda TAG_: f"""# {"⟰7 " * (CMNTLEN // 3)} {TAG_}{NEWLINE}"""
+MARK7MID = lambda TAG_: f"""# {"⟰7⟱ " * (CMNTLEN // 4)} {TAG_}"""
+MARK7MIDLN = lambda TAG_: f"""# {"⟰7⟱ " * (CMNTLEN // 4)} {TAG_}{NEWLINE}"""
+MARK7START = lambda TAG_: f"""# {"7⟱ " * (CMNTLEN // 3)} {TAG_}"""
+MARK7STARTLN = lambda TAG_: f"""# {"7⟱ " * (CMNTLEN // 3)} {TAG_}{NEWLINE}"""
+MARK8END = lambda TAG_: f"""# {"⟰8 " * (CMNTLEN // 3)} {TAG_}"""
+MARK8ENDLN = lambda TAG_: f"""# {"⟰8 " * (CMNTLEN // 3)} {TAG_}{NEWLINE}"""
+MARK8MID = lambda TAG_: f"""# {"⟰8⟱ " * (CMNTLEN // 4)} {TAG_}"""
+MARK8MIDLN = lambda TAG_: f"""# {"⟰8⟱ " * (CMNTLEN // 4)} {TAG_}{NEWLINE}"""
+MARK8START = lambda TAG_: f"""# {"8⟱ " * (CMNTLEN // 3)} {TAG_}"""
+MARK8STARTLN = lambda TAG_: f"""# {"8⟱ " * (CMNTLEN // 3)} {TAG_}{NEWLINE}"""
+MARK9END = lambda TAG_: f"""# {"⟰9 " * (CMNTLEN // 3)} {TAG_}"""
+MARK9ENDLN = lambda TAG_: f"""# {"⟰9 " * (CMNTLEN // 3)} {TAG_}{NEWLINE}"""
+MARK9MID = lambda TAG_: f"""# {"⟰9⟱ " * (CMNTLEN // 4)} {TAG_}"""
+MARK9MIDLN = lambda TAG_: f"""# {"⟰9⟱ " * (CMNTLEN // 4)} {TAG_}{NEWLINE}"""
+MARK9START = lambda TAG_: f"""# {"9⟱ " * (CMNTLEN // 3)} {TAG_}"""
+MARK9STARTLN = lambda TAG_: f"""# {"9⟱ " * (CMNTLEN // 3)} {TAG_}{NEWLINE}"""
 MARKLINES_NAME = f"""{CONFIGDIR}MARKLINES.py"""
 MOVELEFT = lambda NUM_: f"""{ESC}[{NUM_}D"""
 MOVETO = lambda LN_, COL_: f"""{ESC}[{LN_};{COL_}H"""
@@ -515,7 +515,7 @@ FMFM_SCTN0004_BTNS_HOLDABLE_LIST = []  # buttons holdable list
 
 
 TBGLST = [
-	# fold here ⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1
+	# fold here ⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1
 	("DEVT_ABSREL00", FMAXDO_SCTN0408_EVTYPEDEF, "ABSREL", "EV type list entry ABSS",),
 	("DEVT_ABSREL01", FMAXDO_SCTN0408_EVTYPELST, "ABSREL", "DEVCD_ABSRZ", "code for right stick X entries",),
 	("DEVT_ABSREL02", FMAXDO_SCTN0408_EVTYPELST, "ABSREL", "DEVCD_ABSX", "code for left stick X entries",),
@@ -2649,7 +2649,7 @@ TBGLST = [
 	("MSE_RT", FMAXDO_SCTN0402_LDIERELDEF, "REL_X", "MOUSEDISTANCE", "move mouse right MOUSEDISTANCE",),
 	("MSE_UP", FMAXDO_SCTN0402_LDIERELDEF, "REL_Y", "MOUSEDISTANCE", "move mouse up MOUSEDISTANCE",),
 	("SYNREPORT", FMAXDO_SCTN0402_LDIESYNDEF, "SYN_REPORT", "0", "send a sync report 0",),
-	# fold here ⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1
+	# fold here ⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1
 ]
 TBGLST.sort()
 
@@ -2669,76 +2669,76 @@ TBGLST.sort()
 # sortADict
 # #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
 def sortADict(dictToSort_):
-	# fold here ⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1
+	# fold here ⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1
 	dictToRtn_ = {}
 	for thisKey_ in sorted(dictToSort_.keys(), key=lambda KEY_: KEY_.lower()):
 		dictToRtn_[thisKey_] = dictToSort_[thisKey_]
 	return dictToRtn_
-	# fold here ⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1
+	# fold here ⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1
 
 
 # #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
 # makeAComment
 # #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
 def makeAComment(comment_):
-	# fold here ⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1
+	# fold here ⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1
 	strToRtn_ = ""
 	strToRtn_ += f"""{CMNTLINE}{NEWLINE}# * {comment_}{NEWLINE}{CMNTLINE}{NEWLINE}"""
 	return strToRtn_
-	# fold here ⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1
+	# fold here ⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1
 
 
 # #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
 # makeAComment
 # #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
 def makeAWideComment(comment_):
-	# fold here ⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1
+	# fold here ⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1
 	strToRtn_ = ""
 	strToRtn_ += f"""#{NEWLINE}#{NEWLINE}{CMNTLINE}{NEWLINE}# * {comment_}{NEWLINE}{CMNTLINE}{NEWLINE}#{NEWLINE}#{NEWLINE}"""
 	return strToRtn_
-	# fold here ⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1
+	# fold here ⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1
 
 
 # #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
 # makeADict
 # #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
 def makeADict(dictName_, dictComment_, dictItems_):
-	# fold here ⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1
+	# fold here ⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1
 	strToRtn_ = ""
 	strToRtn_ += f"""{dictName_} = {OBRCE}  # {dictComment_}
 {dictItems_}{CBRCE}{NEWLINE}{NEWLINE}{NEWLINE}"""
 	return strToRtn_
-	# fold here ⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1
+	# fold here ⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1
 
 
 # #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
 # makeAList
 # #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
 def makeAList(listName_, listComment_, listItems_):
-	# fold here ⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1
+	# fold here ⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1
 	strToRtn_ = ""
 	strToRtn_ += f"""{listName_} = {OBRKT}  # {listComment_}
 {listItems_}{CBRKT}{NEWLINE}{NEWLINE}{NEWLINE}"""
 	return strToRtn_
-	# fold here ⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1
+	# fold here ⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1
 
 
 # #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
 # makeATupDict
 # #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
 def makeATupDict(tupDictName_, tupDictItems_, tupDictSidecar_):
-	# fold here ⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1
+	# fold here ⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1
 	strToRtn_ = ""
 	strToRtn1_ = ""
 
-	# 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥
+	# 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱
 	if tupDictSidecar_ is None:
 		strToRtn_ += f"""{makeAComment(f"start of {tupDictName_} structures")}
 {tupDictName_}TUP = {OPAREN}
 {tupDictItems_}{CPAREN}{NEWLINE}{NEWLINE}def {tupDictName_}DICT{OPAREN}{CPAREN}:
 {NTAB(1)}return dict{OPAREN}{OPAREN}x, y{CPAREN} for x, y in {tupDictName_}TUP{CPAREN}{NEWLINE}{NEWLINE}{NEWLINE}"""
 
-	# ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣
+	# ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰
 	else:
 		strToRtn_ += f"""{makeAComment(f"start of {tupDictName_} structures")}{NEWLINE}"""
 		for key_, items_ in tupDictSidecar_.items():
@@ -2748,44 +2748,44 @@ def makeATupDict(tupDictName_, tupDictItems_, tupDictSidecar_):
 {tupDictItems_}{CPAREN}{NEWLINE}{NEWLINE}def {tupDictName_}DICT{OPAREN}{CPAREN}:
 {NTAB(1)}dictToRtn_ = dict{OPAREN}{OPAREN}x, y{CPAREN} for x, y in {tupDictName_}TUP{CPAREN}{NEWLINE}{strToRtn1_}{NTAB(1)}return listToRtn_, dictToRtn_{NEWLINE}{NEWLINE}{NEWLINE}"""
 
-	# ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1
+	# ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1
 	return strToRtn_
-	# fold here ⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1
+	# fold here ⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1
 
 
 # #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
 # readFileToStr
 # #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
 def readFileToStr(FILENAME_):
-	# fold here ⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1
+	# fold here ⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1
 	strToRtn_ = ""
 	with open(FILENAME_, "tr") as FDIN:
 		strToRtn_ += FDIN.read()
 	return strToRtn_
-	# fold here ⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1
+	# fold here ⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1
 
 
 # #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
 # doErrorItem
 # #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
 def doErrorItem(message_, itemToError_):
-	# fold here ⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1
+	# fold here ⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1
 	print(f"""{NEWLINE}{message_}{NEWLINE}is a tuple {isinstance(itemToError_, tuple)}{NEWLINE}item as parsed{NEWLINE}{repr(itemToError_)}{NEWLINE}""")
-	# fold here ⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1
+	# fold here ⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1
 
 
 # #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
 # explodeItem
 # #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
 def explodeItem(itemToExplode_):
-	# fold here ⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1
+	# fold here ⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1
 	strToRtn_ = ""
 	strToRtn_ += f"""{NTAB(1)}{OPAREN}{DBLQT}{itemToExplode_[0]}{DBLQT}, {itemToExplode_[1]}, """
 	for TI1_ in range(2, len(itemToExplode_)):
 		strToRtn_ += f"""{DBLQT}{itemToExplode_[TI1_]}{DBLQT}, """
 	strToRtn_ = f"""{strToRtn_[:-1]}{CPAREN},{NEWLINE}"""
 	return strToRtn_
-	# fold here ⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1
+	# fold here ⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1
 
 
 # FM_MAKE_CF_BEGINS
@@ -2793,54 +2793,54 @@ def explodeItem(itemToExplode_):
 # makeCF
 # #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
 def makeCFold():
-	# fold here ⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1
+	# fold here ⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1
 	strToRtn_ = ""
 	strToRtn_ += f"""{readFileToStr(CFTOP_NAME)}{readFileToStr(SCTN0102NAME)}"""
 
-	# 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥
+	# 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱
 	strToRtn_ += f"""{makeAComment("SCTN0201 CF defines")}"""
 	for name_, value_ in FMCF_SCTN0201_DEF_DICT.items():
 		strToRtn_ += f"""{name_} = {value_}  # {FMCF_SCTN0201_DEF_CMNT_DICT[name_]}{NEWLINE}"""
 	strToRtn_ += f"""{NEWLINE}{NEWLINE}"""
-	# ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1
+	# ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1
 
-	# 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥
+	# 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱
 	strToRtn_ += f"""{makeAComment("SCTN0202 options structures")}PARMSDICT = {OBRCE}{NEWLINE}"""
 	for name_, value_ in FMCF_SCTN0202_OPTIONS_DICT.items():
 		strToRtn_ += f"""{value_}"""
 	strToRtn_ += f"""{CBRCE}{NEWLINE}{NEWLINE}"""
-	# ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1
+	# ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1
 
-	# 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥
+	# 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱
 	strToRtn_ += f"""OPTIONSDICT = {OBRCE}{NEWLINE}"""
 	for name_, value_ in FMCF_SCTN0202_OPTIONS_DICT.items():
 		strToRtn_ += f"""{value_}"""
 	strToRtn_ += f"""{CBRCE}{NEWLINE}{NEWLINE}{NEWLINE}"""
-	# ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1
+	# ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1
 
 	strToRtn_ += f"""{makeAWideComment("end of managed sections of CF.py")}{NEWLINE}{NEWLINE}"""
 	return strToRtn_
 
-	# fold here ⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1
+	# fold here ⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1
 # FM_MAKE_CF_ENDS
 # FMCF_MAKE_BEGINS
 # #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
 # makeCF
 # #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
 def makeCF():
-	# fold here ⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1
+	# fold here ⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1
 	strToRtn_ = ""
 	strToRtn_ += f"""{readFileToStr(CFTOP_NAME)}{readFileToStr(SCTN0102NAME)}"""
 
-	# 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥
+	# 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱
 	strToRtn_ += f"""{makeAComment("SCTN0201 CF defines")}"""
 	dictToUse_ = sortADict(FMCF_SCTN0201_DEF_DICT)
 	for thisName_, value_ in dictToUse_.items():
 		strToRtn_ += f"""{thisName_} = {value_}  # {FMCF_SCTN0201_DEF_CMNT_DICT[thisName_]}{NEWLINE}"""
 	strToRtn_ += f"""{NEWLINE}{NEWLINE}"""
-	# ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1
+	# ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1
 
-	# 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥
+	# 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱
 	strToRtn_ += f"""{makeAComment("SCTN0202 options structures")}"""
 	strToRtn1_ = ""
 	strToRtn2_ = ""
@@ -2854,18 +2854,18 @@ def makeCF():
 	strToRtn2_ += f"""{CBRCE}{NEWLINE}{FOLD1ENDHERELN}{NEWLINE}"""
 	strToRtn_ += f"""{strToRtn1_}{strToRtn2_}"""
 
-	# ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥
+	# ⟰1⟱ ⟰1⟱ ⟰1⟱ ⟰1⟱ ⟰1⟱ ⟰1⟱ ⟰1⟱ ⟰1⟱ ⟰1⟱ ⟰1⟱ ⟰1⟱ ⟰1⟱ ⟰1⟱ ⟰1⟱ ⟰1⟱ ⟰1⟱ ⟰1⟱ ⟰1⟱ ⟰1⟱ ⟰1⟱ ⟰1⟱ ⟰1⟱ ⟰1⟱ ⟰1⟱ ⟰1⟱ ⟰1⟱ ⟰1⟱ ⟰1⟱ ⟰1⟱ ⟰1⟱ ⟰1⟱ ⟰1⟱ ⟰1⟱ ⟰1⟱ ⟰1⟱ ⟰1⟱ ⟰1⟱
 	strToRtn_ += f"""OPTIONSDICT = {OBRCE}{NEWLINE}"""
 	dictToUse_ = sortADict(FMCF_SCTN0202_OPTIONSDICT_DICT)
 	for thisName_, value_ in dictToUse_.items():
 		strToRtn_ += f"""{value_}"""
 	strToRtn_ += f"""{CBRCE}{NEWLINE}{NEWLINE}{NEWLINE}"""
-	# ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1
+	# ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1
 
 	strToRtn_ += f"""{makeAWideComment("end of managed sections of CF.py")}{NEWLINE}{NEWLINE}"""
 	return strToRtn_
 
-	# fold here ⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1
+	# fold here ⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1
 # FMCF_MAKE_ENDS
 
 
@@ -2874,7 +2874,7 @@ def makeCF():
 # makeDOHBI
 # #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
 def makeDOHBI():
-	# fold here ⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1
+	# fold here ⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1
 	strToRtn_ = ""
 	strToRtn_ += f"""{readFileToStr(DOHBITOP_NAME)}"""
 	for item_ in FMDO_SCTN040A_HBIABSLIST:
@@ -2890,17 +2890,17 @@ def makeDOHBI():
 		strToRtn_ += f"""{NTAB(1)}devHBI.enable{OPAREN}LD.EV_REL.{item_}{NEWLINE}"""
 	strToRtn_ += f"""{readFileToStr(DOHBIBTM_NAME)}"""
 	return strToRtn_
-	# fold here ⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1
-# ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥
+	# fold here ⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1
+# ⟰1⟱ ⟰1⟱ ⟰1⟱ ⟰1⟱ ⟰1⟱ ⟰1⟱ ⟰1⟱ ⟰1⟱ ⟰1⟱ ⟰1⟱ ⟰1⟱ ⟰1⟱ ⟰1⟱ ⟰1⟱ ⟰1⟱ ⟰1⟱ ⟰1⟱ ⟰1⟱ ⟰1⟱ ⟰1⟱ ⟰1⟱ ⟰1⟱ ⟰1⟱ ⟰1⟱ ⟰1⟱ ⟰1⟱ ⟰1⟱ ⟰1⟱ ⟰1⟱ ⟰1⟱ ⟰1⟱ ⟰1⟱ ⟰1⟱ ⟰1⟱ ⟰1⟱ ⟰1⟱ ⟰1⟱
 # #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
 # makeDO
 # #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
 def makeDO():
-	# fold here ⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1
+	# fold here ⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1
 	strToRtn_ = ""
 	strToRtn_ += f"""{readFileToStr(DOTOP_NAME)}"""
 
-	# 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ SCTN41 device defines
+	# 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ SCTN41 device defines
 	strToRtn_ += f"""{makeAComment("SCTN0401 device defines")}"""
 	for name_, value_ in FMDO_SCTN0401_DEVICEDEFDICT.items():
 		strToRtn_ += f"""{value_}  # {FMDO_SCTN0401_DEVICEDEFCMNTDICT[name_]}{NEWLINE}"""
@@ -2908,34 +2908,34 @@ def makeDO():
 	for item_ in BTNSHOLDABLELIST:
 		strToRtn_ += f"""{NTAB(1)}{item_},{NEWLINE}"""
 	strToRtn_ += f"""{CBRKT}{NEWLINE}{NEWLINE}{NEWLINE}"""
-	# ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 SCTN41 device defines
+	# ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 SCTN41 device defines
 
-	# 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ SCTN42 LDIE entries
+	# 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ SCTN42 LDIE entries
 	strToRtn_ += f"""{makeAComment("SCTN0402 LDIE entries")}{FOLD1STARTHERE}{NEWLINE}"""
 	for name_, value_ in FMDO_SCTN0402_LDIEDICT.items():
 		strToRtn_ += f"""{name_} = {value_}  # {FMDO_SCTN0402_LDIECMNTDICT[name_]}{NEWLINE}"""
 	strToRtn_ += f"""{FOLD1ENDHERE}{NEWLINE}{NEWLINE}"""
-	# ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ SCTN42 LDIE entries
+	# ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ SCTN42 LDIE entries
 	strToRtn_ += f"""SPCLAXLIST = {OBRKT}{NEWLINE}"""
 	for thisItem_ in FMDO_SCTN0402_LDIESPCLLIST:
 		strToRtn_ += f"""{NTAB(1)}{thisItem_},  # {FMDO_SCTN0402_LDIECMNTDICT[thisItem_]}{NEWLINE}"""
 	strToRtn_ += f"""{CBRKT}{NEWLINE}{NEWLINE}{NEWLINE}"""
-	# ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ SCTN42 LDIE entries
+	# ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ SCTN42 LDIE entries
 	strToRtn_ += f"""RELAXLIST = {OBRKT}{NEWLINE}"""
 	for thisItem_ in FMDO_SCTN0402_LDIERELLIST:
 		strToRtn_ += f"""{NTAB(1)}{thisItem_},  # {FMDO_SCTN0402_LDIECMNTDICT[thisItem_]}{NEWLINE}"""
 	strToRtn_ += f"""{CBRKT}{NEWLINE}{NEWLINE}{NEWLINE}"""
-	# ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 SCTN42 LDIE entries
+	# ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 SCTN42 LDIE entries
 
-	# 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ SCTN43 actions to output entries
+	# 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ SCTN43 actions to output entries
 	strToRtn_ += f"""{makeAComment("SCTN0403 actions to output entries")}"""
 	strToRtn_ += f"""ACTIONS = {OBRCE}{NEWLINE}{NTAB(1)}{FOLD1STARTHERE}{NEWLINE}{NEWLINE}"""
 	for name_, value_ in FMDO_SCTN0403_AXDEFDICT.items():
 		strToRtn_ += f"""{NTAB(1)}{name_}: {OBRKT}  # {FMDO_SCTN0403_AXDEFCMNTDICT[name_]}{NEWLINE}{NTAB(1)}{FOLD2STARTHERE}{NEWLINE}{value_}{NTAB(1)}{CBRKT},{NEWLINE}{NTAB(1)}{FOLD2ENDHERE}{NEWLINE}{NEWLINE}"""
 	strToRtn_ += f"""{NEWLINE}{NTAB(1)}{FOLD1ENDHERE}{NEWLINE}{CBRCE}{NEWLINE}{NEWLINE}{NEWLINE}"""
-	# ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 SCTN43 actions to output entries
+	# ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 SCTN43 actions to output entries
 
-	# 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ SCTN48 device code list and dict
+	# 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ SCTN48 device code list and dict
 	strToRtn_ += f"""{makeAComment("SCTN0408 device code list and dict")}"""
 	for name_, item_ in FMDO_SCTN0408_DEFDICT.items():
 		strToRtn_ += f"""{item_}  # {FMDO_SCTN0408_DEFCMNTDICT[name_]}{NEWLINE}"""
@@ -2953,9 +2953,9 @@ def makeDO():
 	strToRtn1_ += f"""{CBRKT}{NEWLINE}{NEWLINE}{NEWLINE}"""
 	strToRtn2_ += f"""{NTAB(1)}{FOLD1ENDHERE}{NEWLINE}{CBRCE}{NEWLINE}{NEWLINE}{NEWLINE}"""
 	strToRtn_ += f"""{strToRtn1_}{strToRtn2_}"""
-	# ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 SCTN48 device code list and dict
+	# ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 SCTN48 device code list and dict
 
-	# 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ SCTN44 device entries
+	# 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ SCTN44 device entries
 	strToRtn_ += f"""{makeAComment("SCTN0404 device entries")}"""
 	strToRtn1_ = ""
 	strToRtn_ += f"""DEVICES = {OBRCE}  # define SCTN0404 DEVICES{NEWLINE}{NTAB(1)}{FOLD1STARTHERE}{NEWLINE}{NEWLINE}"""
@@ -2966,18 +2966,18 @@ def makeDO():
 		strToRtn1_ += f"""{NTAB(1)}{CBRCE},{NEWLINE}{NTAB(2)}{FOLD2ENDHERE}{NEWLINE}{NEWLINE}"""
 	strToRtn1_ += f"""{CBRCE}{NEWLINE}{NTAB(1)}{FOLD1ENDHERE}{NEWLINE}{NEWLINE}{NEWLINE}"""
 	strToRtn_ += f"""{strToRtn1_}"""
-	# ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 SCTN44 device entries
+	# ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 SCTN44 device entries
 
-	# 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ SCTN45 device PROFILE BTNTYPEDICT REPEATDICT
+	# 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ SCTN45 device PROFILE BTNTYPEDICT REPEATDICT
 	strToRtn_ += f"""{makeAComment("SCTN0405 device PROFILE BTNTYPEDICT REPEATDICT")}"""
 	strToRtn_ += f"""{makeAComment("PROFILE")}{NEWLINE}PROFILE = {OBRCE}  # device PROFILE{NEWLINE}{NTAB(1)}{FOLD1STARTHERE}{NEWLINE}"""
 	strToRtn1_ = f"""{makeAComment("REPEATDICT")}{NEWLINE}REPEATDICT = {OBRCE}  # device REPEATDSICT{NEWLINE}{NTAB(1)}{FOLD1STARTHERE}{NEWLINE}"""
 	strToRtn2_ = f"""{makeAComment("BTNTYPEDICT")}{NEWLINE}BTNTYPEDICT = {OBRCE}  # BTNTYPEDICT{NEWLINE}{NTAB(1)}{FOLD1STARTHERE}{NEWLINE}"""
 	strToRtn3_ = f"""{makeAComment("BTNNDXDICT")}{NEWLINE}BTNNDXDICT = {OBRCE}  # BTNNDXDICT{NEWLINE}{NTAB(1)}{FOLD1STARTHERE}{NEWLINE}"""
 
-	# ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ SCTN45 device PROFILE BTNTYPEDICT REPEATDICT
+	# ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ SCTN45 device PROFILE BTNTYPEDICT REPEATDICT
 	for thisDEV_MYNAME_, thisVal1_ in FMDO_SCTN0405_PROFDICT.items():
-		# 2⥥ 2⥥ 2⥥ 2⥥ 2⥥ 2⥥ 2⥥ 2⥥ 2⥥ 2⥥ 2⥥ 2⥥ 2⥥ 2⥥ 2⥥ 2⥥ 2⥥ 2⥥ 2⥥ 2⥥ 2⥥ 2⥥ 2⥥ 2⥥ 2⥥ 2⥥ 2⥥ 2⥥ 2⥥ 2⥥ 2⥥ 2⥥ 2⥥ 2⥥ 2⥥ 2⥥ 2⥥ 2⥥ 2⥥ 2⥥ 2⥥ 2⥥ 2⥥ 2⥥ 2⥥ 2⥥ 2⥥ 2⥥ 2⥥ 2⥥ 2⥥ 2⥥ 2⥥ 2⥥ for thisDEV_MYNAME_, thisVal1_ in FMDO_SCTN0405_PROFDICT.items():
+		# 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ for thisDEV_MYNAME_, thisVal1_ in FMDO_SCTN0405_PROFDICT.items():
 		BC1 = f""" {thisDEV_MYNAME_}:"""
 		MK1 = f"""{NTAB(1)}{MARK1MIDLN(BC1)}"""
 		strToRtn_ += f"""{NTAB(1)}{thisDEV_MYNAME_}: {OBRCE}{NEWLINE}{NTAB(2)}{FOLD2STARTHERE}{BC1}{NEWLINE}{NEWLINE}{MK1}{NTAB(2)}{MARK2STARTLN(BC1)}"""
@@ -2985,137 +2985,137 @@ def makeDO():
 		strToRtn2_ += f"""{NTAB(1)}{thisDEV_MYNAME_}: {OBRCE}{NEWLINE}{NTAB(2)}{FOLD2STARTHERE}{BC1}{NEWLINE}{NEWLINE}{MK1}{NTAB(2)}{MARK2STARTLN(BC1)}"""
 		strToRtn3_ += f"""{NTAB(1)}{thisDEV_MYNAME_}: {OBRCE}{NEWLINE}{NTAB(2)}{FOLD2STARTHERE}{BC1}{NEWLINE}{NEWLINE}{MK1}{NTAB(2)}{MARK2STARTLN(BC1)}"""
 
-	# ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ SCTN45 device PROFILE BTNTYPEDICT REPEATDICT
-		# ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ for thisDEV_MYNAME_, thisVal1_ in FMDO_SCTN0405_PROFDICT.items():
+	# ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ SCTN45 device PROFILE BTNTYPEDICT REPEATDICT
+		# ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ for thisDEV_MYNAME_, thisVal1_ in FMDO_SCTN0405_PROFDICT.items():
 		for thisBTNName1_, thisVal2_ in thisVal1_.items():
-			# 3⥥ 3⥥ 3⥥ 3⥥ 3⥥ 3⥥ 3⥥ 3⥥ 3⥥ 3⥥ 3⥥ 3⥥ 3⥥ 3⥥ 3⥥ 3⥥ 3⥥ 3⥥ 3⥥ 3⥥ 3⥥ 3⥥ 3⥥ 3⥥ 3⥥ 3⥥ 3⥥ 3⥥ 3⥥ 3⥥ 3⥥ 3⥥ 3⥥ 3⥥ 3⥥ 3⥥ 3⥥ 3⥥ 3⥥ 3⥥ 3⥥ 3⥥ 3⥥ 3⥥ 3⥥ 3⥥ 3⥥ 3⥥ 3⥥ 3⥥ 3⥥ 3⥥ 3⥥ 3⥥
+			# 3⟱ 3⟱ 3⟱ 3⟱ 3⟱ 3⟱ 3⟱ 3⟱ 3⟱ 3⟱ 3⟱ 3⟱ 3⟱ 3⟱ 3⟱ 3⟱ 3⟱ 3⟱ 3⟱ 3⟱ 3⟱ 3⟱ 3⟱ 3⟱ 3⟱ 3⟱ 3⟱ 3⟱ 3⟱ 3⟱ 3⟱ 3⟱ 3⟱ 3⟱ 3⟱ 3⟱ 3⟱ 3⟱ 3⟱ 3⟱ 3⟱ 3⟱ 3⟱ 3⟱ 3⟱ 3⟱ 3⟱ 3⟱ 3⟱ 3⟱ 3⟱ 3⟱ 3⟱ 3⟱
 			BC2 = f"""{BC1}{thisBTNName1_}:"""
 			MK2 = F"""{MK1}{NTAB(2)}{MARK2MIDLN(BC2)}"""
 
-	# ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ SCTN45 device PROFILE BTNTYPEDICT REPEATDICT
-		# ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ for thisDEV_MYNAME_, thisVal1_ in FMDO_SCTN0405_PROFDICT.items():
-			# ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣
+	# ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ SCTN45 device PROFILE BTNTYPEDICT REPEATDICT
+		# ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ for thisDEV_MYNAME_, thisVal1_ in FMDO_SCTN0405_PROFDICT.items():
+			# ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰
 			if thisBTNName1_ not in BTNSHOLDABLELIST:
-				# ⥥4 ⥥4 ⥥4 ⥥4 ⥥4 ⥥4 ⥥4 ⥥4 ⥥4 ⥥4 ⥥4 ⥥4 ⥥4 ⥥4 ⥥4 ⥥4 ⥥4 ⥥4 ⥥4 ⥥4 ⥥4 ⥥4 ⥥4 ⥥4 ⥥4 ⥥4 ⥥4 ⥥4 ⥥4 ⥥4 ⥥4 ⥥4 ⥥4
+				# ⟱4 ⟱4 ⟱4 ⟱4 ⟱4 ⟱4 ⟱4 ⟱4 ⟱4 ⟱4 ⟱4 ⟱4 ⟱4 ⟱4 ⟱4 ⟱4 ⟱4 ⟱4 ⟱4 ⟱4 ⟱4 ⟱4 ⟱4 ⟱4 ⟱4 ⟱4 ⟱4 ⟱4 ⟱4 ⟱4 ⟱4 ⟱4 ⟱4
 				strToRtn_ += f"""{NTAB(2)}{thisBTNName1_}: {OBRKT}{NEWLINE}{NTAB(3)}{MARK3STARTLN(f"{BC2}AX")}{thisVal2_}{NTAB(2)}{CBRKT},{NEWLINE}{NTAB(3)}{MARK3ENDLN(f"{BC2}AX")}{NEWLINE}{MK2}"""
 				strToRtn1_ += f"""{NTAB(2)}{thisBTNName1_}: {FMDO_SCTN0405_RPTDICT[thisDEV_MYNAME_][thisBTNName1_]}{NEWLINE}"""
 				strToRtn2_ += f"""{NTAB(2)}{thisBTNName1_}: {FMDO_SCTN0405_BTNTYPEDICT[thisDEV_MYNAME_][thisBTNName1_]}{NEWLINE}"""
 				strToRtn3_ += f"""{NTAB(2)}{thisBTNName1_}: {FMDO_SCTN0405_BTNNDXDICT[thisDEV_MYNAME_][thisBTNName1_]}{NEWLINE}"""
-				# ⥣4 ⥣4 ⥣4 ⥣4 ⥣4 ⥣4 ⥣4 ⥣4 ⥣4 ⥣4 ⥣4 ⥣4 ⥣4 ⥣4 ⥣4 ⥣4 ⥣4 ⥣4 ⥣4 ⥣4 ⥣4 ⥣4 ⥣4 ⥣4 ⥣4 ⥣4 ⥣4 ⥣4 ⥣4 ⥣4 ⥣4 ⥣4 ⥣4
+				# ⟰4 ⟰4 ⟰4 ⟰4 ⟰4 ⟰4 ⟰4 ⟰4 ⟰4 ⟰4 ⟰4 ⟰4 ⟰4 ⟰4 ⟰4 ⟰4 ⟰4 ⟰4 ⟰4 ⟰4 ⟰4 ⟰4 ⟰4 ⟰4 ⟰4 ⟰4 ⟰4 ⟰4 ⟰4 ⟰4 ⟰4 ⟰4 ⟰4
 
-	# ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ SCTN45 device PROFILE BTNTYPEDICT REPEATDICT
-		# ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ for thisDEV_MYNAME_, thisVal1_ in FMDO_SCTN0405_PROFDICT.items():
-			# ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣
+	# ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ SCTN45 device PROFILE BTNTYPEDICT REPEATDICT
+		# ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ for thisDEV_MYNAME_, thisVal1_ in FMDO_SCTN0405_PROFDICT.items():
+			# ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰
 			elif thisBTNName1_ in BTNSHOLDABLELIST:
-				# ⥥4 ⥥4 ⥥4 ⥥4 ⥥4 ⥥4 ⥥4 ⥥4 ⥥4 ⥥4 ⥥4 ⥥4 ⥥4 ⥥4 ⥥4 ⥥4 ⥥4 ⥥4 ⥥4 ⥥4 ⥥4 ⥥4 ⥥4 ⥥4 ⥥4 ⥥4 ⥥4 ⥥4 ⥥4 ⥥4 ⥥4 ⥥4 ⥥4
+				# ⟱4 ⟱4 ⟱4 ⟱4 ⟱4 ⟱4 ⟱4 ⟱4 ⟱4 ⟱4 ⟱4 ⟱4 ⟱4 ⟱4 ⟱4 ⟱4 ⟱4 ⟱4 ⟱4 ⟱4 ⟱4 ⟱4 ⟱4 ⟱4 ⟱4 ⟱4 ⟱4 ⟱4 ⟱4 ⟱4 ⟱4 ⟱4 ⟱4
 				strToRtn_ += f"""{NTAB(2)}{thisBTNName1_}: {OBRCE}  # holdable button {thisBTNName1_}{NEWLINE}{NTAB(3)}{MARK3STARTLN(BC2)}"""
 				strToRtn1_ += f"""{NTAB(2)}{thisBTNName1_}: {OBRCE}  # holdable button {thisBTNName1_}{NEWLINE}{NTAB(3)}{MARK3STARTLN(BC2)}"""
 				strToRtn2_ += f"""{NTAB(2)}{thisBTNName1_}: {OBRCE}  # holdable button {thisBTNName1_}{NEWLINE}{NTAB(3)}{MARK3STARTLN(BC2)}"""
 				strToRtn3_ += f"""{NTAB(2)}{thisBTNName1_}: {OBRCE}  # holdable button {thisBTNName1_}{NEWLINE}{NTAB(3)}{MARK3STARTLN(BC2)}"""
 
-	# ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ SCTN45 device PROFILE BTNTYPEDICT REPEATDICT
-		# ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ for thisDEV_MYNAME_, thisVal1_ in FMDO_SCTN0405_PROFDICT.items():
-			# ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣
-				# ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣
+	# ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ SCTN45 device PROFILE BTNTYPEDICT REPEATDICT
+		# ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ for thisDEV_MYNAME_, thisVal1_ in FMDO_SCTN0405_PROFDICT.items():
+			# ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰
+				# ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰
 				# print(f"""thisDEV_MYNAME_ {thisDEV_MYNAME_}{NEWLINE}thisVal1_ {thisVal1_}{NEWLINE}thisBTNName1_ {thisBTNName1_}{NEWLINE}thisVal2_ {thisVal2_}""")
 				for thisBTNName2_, thisVal3 in thisVal2_.items():
-					# ⥥5 ⥥5 ⥥5 ⥥5 ⥥5 ⥥5 ⥥5 ⥥5 ⥥5 ⥥5 ⥥5 ⥥5 ⥥5 ⥥5 ⥥5 ⥥5 ⥥5 ⥥5 ⥥5 ⥥5 ⥥5 ⥥5 ⥥5 ⥥5 ⥥5 ⥥5 ⥥5 ⥥5 ⥥5 ⥥5 ⥥5 ⥥5 ⥥5
+					# ⟱5 ⟱5 ⟱5 ⟱5 ⟱5 ⟱5 ⟱5 ⟱5 ⟱5 ⟱5 ⟱5 ⟱5 ⟱5 ⟱5 ⟱5 ⟱5 ⟱5 ⟱5 ⟱5 ⟱5 ⟱5 ⟱5 ⟱5 ⟱5 ⟱5 ⟱5 ⟱5 ⟱5 ⟱5 ⟱5 ⟱5 ⟱5 ⟱5
 					BC3 = f"""{BC2}{thisBTNName2_}:"""
 					MK3 = f"""{MK2}{NTAB(3)}{MARK3MIDLN(BC3)}"""
 
-	# ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ SCTN45 device PROFILE BTNTYPEDICT REPEATDICT
-		# ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ for thisDEV_MYNAME_, thisVal1_ in FMDO_SCTN0405_PROFDICT.items():
-			# ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣
-				# ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣
-					# ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣
+	# ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ SCTN45 device PROFILE BTNTYPEDICT REPEATDICT
+		# ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ for thisDEV_MYNAME_, thisVal1_ in FMDO_SCTN0405_PROFDICT.items():
+			# ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰
+				# ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰
+					# ⟱5⟰ ⟱5⟰ ⟱5⟰ ⟱5⟰ ⟱5⟰ ⟱5⟰ ⟱5⟰ ⟱5⟰ ⟱5⟰ ⟱5⟰ ⟱5⟰ ⟱5⟰ ⟱5⟰ ⟱5⟰ ⟱5⟰ ⟱5⟰ ⟱5⟰ ⟱5⟰ ⟱5⟰ ⟱5⟰ ⟱5⟰ ⟱5⟰ ⟱5⟰ ⟱5⟰ ⟱5⟰ ⟱5⟰ ⟱5⟰ ⟱5⟰ ⟱5⟰ ⟱5⟰ ⟱5⟰ ⟱5⟰ ⟱5⟰ ⟱5⟰ ⟱5⟰ ⟱5⟰ ⟱5⟰ ⟱5⟰
 					if thisBTNName2_ not in BTNSHOLDABLELIST:
-						# ⥥6 ⥥6 ⥥6 ⥥6 ⥥6 ⥥6 ⥥6 ⥥6 ⥥6 ⥥6 ⥥6 ⥥6 ⥥6 ⥥6 ⥥6 ⥥6 ⥥6 ⥥6 ⥥6 ⥥6 ⥥6 ⥥6 ⥥6 ⥥6 ⥥6 ⥥6 ⥥6 ⥥6 ⥥6 ⥥6 ⥥6 ⥥6 ⥥6
+						# ⟱6 ⟱6 ⟱6 ⟱6 ⟱6 ⟱6 ⟱6 ⟱6 ⟱6 ⟱6 ⟱6 ⟱6 ⟱6 ⟱6 ⟱6 ⟱6 ⟱6 ⟱6 ⟱6 ⟱6 ⟱6 ⟱6 ⟱6 ⟱6 ⟱6 ⟱6 ⟱6 ⟱6 ⟱6 ⟱6 ⟱6 ⟱6 ⟱6
 						strToRtn_ += f"""{NTAB(3)}{thisBTNName2_}: {OBRKT}{NEWLINE}{NTAB(4)}{MARK4STARTLN(BC3)}{thisVal3}{NTAB(3)}{CBRKT},{NEWLINE}{NTAB(4)}{MARK4ENDLN(BC3)}{NEWLINE}{MK3}"""
 						strToRtn1_ += f"""{NTAB(3)}{thisBTNName2_}: {FMDO_SCTN0405_RPTDICT[thisDEV_MYNAME_][thisBTNName1_][thisBTNName2_]}{NEWLINE}"""
 						strToRtn2_ += f"""{NTAB(3)}{thisBTNName2_}: {FMDO_SCTN0405_BTNTYPEDICT[thisDEV_MYNAME_][thisBTNName1_][thisBTNName2_]}{NEWLINE}"""
 						strToRtn3_ += f"""{NTAB(3)}{thisBTNName2_}: {FMDO_SCTN0405_BTNNDXDICT[thisDEV_MYNAME_][thisBTNName1_][thisBTNName2_]}{NEWLINE}"""
-						# ⥣6 ⥣6 ⥣6 ⥣6 ⥣6 ⥣6 ⥣6 ⥣6 ⥣6 ⥣6 ⥣6 ⥣6 ⥣6 ⥣6 ⥣6 ⥣6 ⥣6 ⥣6 ⥣6 ⥣6 ⥣6 ⥣6 ⥣6 ⥣6 ⥣6 ⥣6 ⥣6 ⥣6 ⥣6 ⥣6 ⥣6 ⥣6 ⥣6
+						# ⟰6 ⟰6 ⟰6 ⟰6 ⟰6 ⟰6 ⟰6 ⟰6 ⟰6 ⟰6 ⟰6 ⟰6 ⟰6 ⟰6 ⟰6 ⟰6 ⟰6 ⟰6 ⟰6 ⟰6 ⟰6 ⟰6 ⟰6 ⟰6 ⟰6 ⟰6 ⟰6 ⟰6 ⟰6 ⟰6 ⟰6 ⟰6 ⟰6
 
-	# ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ SCTN45 device PROFILE BTNTYPEDICT REPEATDICT
-		# ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ for thisDEV_MYNAME_, thisVal1_ in FMDO_SCTN0405_PROFDICT.items():
-			# ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣
-				# ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣
-					# ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣
+	# ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ SCTN45 device PROFILE BTNTYPEDICT REPEATDICT
+		# ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ for thisDEV_MYNAME_, thisVal1_ in FMDO_SCTN0405_PROFDICT.items():
+			# ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰
+				# ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰
+					# ⟱5⟰ ⟱5⟰ ⟱5⟰ ⟱5⟰ ⟱5⟰ ⟱5⟰ ⟱5⟰ ⟱5⟰ ⟱5⟰ ⟱5⟰ ⟱5⟰ ⟱5⟰ ⟱5⟰ ⟱5⟰ ⟱5⟰ ⟱5⟰ ⟱5⟰ ⟱5⟰ ⟱5⟰ ⟱5⟰ ⟱5⟰ ⟱5⟰ ⟱5⟰ ⟱5⟰ ⟱5⟰ ⟱5⟰ ⟱5⟰ ⟱5⟰ ⟱5⟰ ⟱5⟰ ⟱5⟰ ⟱5⟰ ⟱5⟰ ⟱5⟰ ⟱5⟰ ⟱5⟰ ⟱5⟰ ⟱5⟰
 					elif thisBTNName2_ in BTNSHOLDABLELIST:
-						# 6⥥ 6⥥ 6⥥ 6⥥ 6⥥ 6⥥ 6⥥ 6⥥ 6⥥ 6⥥ 6⥥ 6⥥ 6⥥ 6⥥ 6⥥ 6⥥ 6⥥ 6⥥ 6⥥ 6⥥ 6⥥ 6⥥ 6⥥ 6⥥ 6⥥ 6⥥ 6⥥ 6⥥ 6⥥ 6⥥ 6⥥ 6⥥ 6⥥ 6⥥ 6⥥ 6⥥ 6⥥ 6⥥ 6⥥ 6⥥ 6⥥ 6⥥ 6⥥ 6⥥ 6⥥ 6⥥ 6⥥ 6⥥ 6⥥ 6⥥ 6⥥ 6⥥ 6⥥ 6⥥
+						# 6⟱ 6⟱ 6⟱ 6⟱ 6⟱ 6⟱ 6⟱ 6⟱ 6⟱ 6⟱ 6⟱ 6⟱ 6⟱ 6⟱ 6⟱ 6⟱ 6⟱ 6⟱ 6⟱ 6⟱ 6⟱ 6⟱ 6⟱ 6⟱ 6⟱ 6⟱ 6⟱ 6⟱ 6⟱ 6⟱ 6⟱ 6⟱ 6⟱ 6⟱ 6⟱ 6⟱ 6⟱ 6⟱ 6⟱ 6⟱ 6⟱ 6⟱ 6⟱ 6⟱ 6⟱ 6⟱ 6⟱ 6⟱ 6⟱ 6⟱ 6⟱ 6⟱ 6⟱ 6⟱
 						strToRtn_ += f"""{NTAB(3)}{thisBTNName2_}: {OBRCE}  # holdable buttons {thisBTNName1_}:{thisBTNName2_}{NEWLINE}{NTAB(2)}{MARK2STARTLN(BC2)}"""
 						strToRtn1_ += f"""{NTAB(3)}{thisBTNName2_}: {OBRCE}  # holdable buttons {thisBTNName1_}:{thisBTNName2_}{NEWLINE}{NTAB(2)}{MARK2STARTLN(BC2)}"""
 						strToRtn2_ += f"""{NTAB(3)}{thisBTNName2_}: {OBRCE}  # holdable buttons {thisBTNName1_}:{thisBTNName2_}{NEWLINE}{NTAB(2)}{MARK2STARTLN(BC2)}"""
 						strToRtn3_ += f"""{NTAB(3)}{thisBTNName2_}: {OBRCE}  # holdable buttons {thisBTNName1_}:{thisBTNName2_}{NEWLINE}{NTAB(2)}{MARK2STARTLN(BC2)}"""
 
-	# ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ SCTN45 device PROFILE BTNTYPEDICT REPEATDICT
-		# ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ for thisDEV_MYNAME_, thisVal1_ in FMDO_SCTN0405_PROFDICT.items():
-			# ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣
-				# ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣
-					# ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣
-						# ⥥6⥣ ⥥6⥣ ⥥6⥣ ⥥6⥣ ⥥6⥣ ⥥6⥣ ⥥6⥣ ⥥6⥣ ⥥6⥣ ⥥6⥣ ⥥6⥣ ⥥6⥣ ⥥6⥣ ⥥6⥣ ⥥6⥣ ⥥6⥣ ⥥6⥣ ⥥6⥣ ⥥6⥣ ⥥6⥣ ⥥6⥣ ⥥6⥣ ⥥6⥣ ⥥6⥣ ⥥6⥣ ⥥6⥣ ⥥6⥣ ⥥6⥣ ⥥6⥣ ⥥6⥣ ⥥6⥣ ⥥6⥣ ⥥6⥣ ⥥6⥣ ⥥6⥣ ⥥6⥣ ⥥6⥣ ⥥6⥣
+	# ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ SCTN45 device PROFILE BTNTYPEDICT REPEATDICT
+		# ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ for thisDEV_MYNAME_, thisVal1_ in FMDO_SCTN0405_PROFDICT.items():
+			# ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰
+				# ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰
+					# ⟱5⟰ ⟱5⟰ ⟱5⟰ ⟱5⟰ ⟱5⟰ ⟱5⟰ ⟱5⟰ ⟱5⟰ ⟱5⟰ ⟱5⟰ ⟱5⟰ ⟱5⟰ ⟱5⟰ ⟱5⟰ ⟱5⟰ ⟱5⟰ ⟱5⟰ ⟱5⟰ ⟱5⟰ ⟱5⟰ ⟱5⟰ ⟱5⟰ ⟱5⟰ ⟱5⟰ ⟱5⟰ ⟱5⟰ ⟱5⟰ ⟱5⟰ ⟱5⟰ ⟱5⟰ ⟱5⟰ ⟱5⟰ ⟱5⟰ ⟱5⟰ ⟱5⟰ ⟱5⟰ ⟱5⟰ ⟱5⟰
+						# ⟱6⟰ ⟱6⟰ ⟱6⟰ ⟱6⟰ ⟱6⟰ ⟱6⟰ ⟱6⟰ ⟱6⟰ ⟱6⟰ ⟱6⟰ ⟱6⟰ ⟱6⟰ ⟱6⟰ ⟱6⟰ ⟱6⟰ ⟱6⟰ ⟱6⟰ ⟱6⟰ ⟱6⟰ ⟱6⟰ ⟱6⟰ ⟱6⟰ ⟱6⟰ ⟱6⟰ ⟱6⟰ ⟱6⟰ ⟱6⟰ ⟱6⟰ ⟱6⟰ ⟱6⟰ ⟱6⟰ ⟱6⟰ ⟱6⟰ ⟱6⟰ ⟱6⟰ ⟱6⟰ ⟱6⟰ ⟱6⟰
 						for thisBTNName3_, thisAX_ in thisVal3.items():
-							# 7⥥ 7⥥ 7⥥ 7⥥ 7⥥ 7⥥ 7⥥ 7⥥ 7⥥ 7⥥ 7⥥ 7⥥ 7⥥ 7⥥ 7⥥ 7⥥ 7⥥ 7⥥ 7⥥ 7⥥ 7⥥ 7⥥ 7⥥ 7⥥ 7⥥ 7⥥ 7⥥ 7⥥ 7⥥ 7⥥ 7⥥ 7⥥ 7⥥ 7⥥ 7⥥ 7⥥ 7⥥ 7⥥ 7⥥ 7⥥ 7⥥ 7⥥ 7⥥ 7⥥ 7⥥ 7⥥ 7⥥ 7⥥ 7⥥ 7⥥ 7⥥ 7⥥ 7⥥ 7⥥
+							# 7⟱ 7⟱ 7⟱ 7⟱ 7⟱ 7⟱ 7⟱ 7⟱ 7⟱ 7⟱ 7⟱ 7⟱ 7⟱ 7⟱ 7⟱ 7⟱ 7⟱ 7⟱ 7⟱ 7⟱ 7⟱ 7⟱ 7⟱ 7⟱ 7⟱ 7⟱ 7⟱ 7⟱ 7⟱ 7⟱ 7⟱ 7⟱ 7⟱ 7⟱ 7⟱ 7⟱ 7⟱ 7⟱ 7⟱ 7⟱ 7⟱ 7⟱ 7⟱ 7⟱ 7⟱ 7⟱ 7⟱ 7⟱ 7⟱ 7⟱ 7⟱ 7⟱ 7⟱ 7⟱
 							strToRtn_ += f"""{NTAB(4)}{thisBTNName3_}: {OBRKT}{NEWLINE}{NTAB(5)}{MARK3STARTLN(thisAX_)}{thisAX_}{NTAB(4)}{CBRKT},{NEWLINE}{NTAB(3)}{MARK3ENDLN(thisAX_)}"""
 							strToRtn1_ += f"""{NTAB(4)}{thisBTNName3_}: {FMDO_SCTN0405_RPTDICT[thisDEV_MYNAME_][thisBTNName1_][thisBTNName2_][thisBTNName3_]}{NEWLINE}"""
 							strToRtn2_ += f"""{NTAB(4)}{thisBTNName3_}: {FMDO_SCTN0405_BTNTYPEDICT[thisDEV_MYNAME_][thisBTNName1_][thisBTNName2_][thisBTNName3_]}{NEWLINE}"""
 							strToRtn3_ += f"""{NTAB(4)}{thisBTNName3_}: {FMDO_SCTN0405_BTNNDXDICT[thisDEV_MYNAME_][thisBTNName1_][thisBTNName2_][thisBTNName3_]}{NEWLINE}"""
-							# ⥣7 ⥣7 ⥣7 ⥣7 ⥣7 ⥣7 ⥣7 ⥣7 ⥣7 ⥣7 ⥣7 ⥣7 ⥣7 ⥣7 ⥣7 ⥣7 ⥣7 ⥣7 ⥣7 ⥣7 ⥣7 ⥣7 ⥣7 ⥣7 ⥣7 ⥣7 ⥣7 ⥣7 ⥣7 ⥣7 ⥣7 ⥣7 ⥣7 ⥣7 ⥣7 ⥣7 ⥣7 ⥣7 ⥣7 ⥣7 ⥣7 ⥣7 ⥣7 ⥣7 ⥣7 ⥣7 ⥣7 ⥣7 ⥣7 ⥣7 ⥣7 ⥣7 ⥣7 ⥣7
+							# ⟰7 ⟰7 ⟰7 ⟰7 ⟰7 ⟰7 ⟰7 ⟰7 ⟰7 ⟰7 ⟰7 ⟰7 ⟰7 ⟰7 ⟰7 ⟰7 ⟰7 ⟰7 ⟰7 ⟰7 ⟰7 ⟰7 ⟰7 ⟰7 ⟰7 ⟰7 ⟰7 ⟰7 ⟰7 ⟰7 ⟰7 ⟰7 ⟰7 ⟰7 ⟰7 ⟰7 ⟰7 ⟰7 ⟰7 ⟰7 ⟰7 ⟰7 ⟰7 ⟰7 ⟰7 ⟰7 ⟰7 ⟰7 ⟰7 ⟰7 ⟰7 ⟰7 ⟰7 ⟰7
 
-	# ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ SCTN45 device PROFILE BTNTYPEDICT REPEATDICT
-		# ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ for thisDEV_MYNAME_, thisVal1_ in FMDO_SCTN0405_PROFDICT.items():
-			# ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣
-				# ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣
-					# ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣
-						# ⥥6⥣ ⥥6⥣ ⥥6⥣ ⥥6⥣ ⥥6⥣ ⥥6⥣ ⥥6⥣ ⥥6⥣ ⥥6⥣ ⥥6⥣ ⥥6⥣ ⥥6⥣ ⥥6⥣ ⥥6⥣ ⥥6⥣ ⥥6⥣ ⥥6⥣ ⥥6⥣ ⥥6⥣ ⥥6⥣ ⥥6⥣ ⥥6⥣ ⥥6⥣ ⥥6⥣ ⥥6⥣ ⥥6⥣ ⥥6⥣ ⥥6⥣ ⥥6⥣ ⥥6⥣ ⥥6⥣ ⥥6⥣ ⥥6⥣ ⥥6⥣ ⥥6⥣ ⥥6⥣ ⥥6⥣ ⥥6⥣
+	# ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ SCTN45 device PROFILE BTNTYPEDICT REPEATDICT
+		# ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ for thisDEV_MYNAME_, thisVal1_ in FMDO_SCTN0405_PROFDICT.items():
+			# ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰
+				# ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰
+					# ⟱5⟰ ⟱5⟰ ⟱5⟰ ⟱5⟰ ⟱5⟰ ⟱5⟰ ⟱5⟰ ⟱5⟰ ⟱5⟰ ⟱5⟰ ⟱5⟰ ⟱5⟰ ⟱5⟰ ⟱5⟰ ⟱5⟰ ⟱5⟰ ⟱5⟰ ⟱5⟰ ⟱5⟰ ⟱5⟰ ⟱5⟰ ⟱5⟰ ⟱5⟰ ⟱5⟰ ⟱5⟰ ⟱5⟰ ⟱5⟰ ⟱5⟰ ⟱5⟰ ⟱5⟰ ⟱5⟰ ⟱5⟰ ⟱5⟰ ⟱5⟰ ⟱5⟰ ⟱5⟰ ⟱5⟰ ⟱5⟰
+						# ⟱6⟰ ⟱6⟰ ⟱6⟰ ⟱6⟰ ⟱6⟰ ⟱6⟰ ⟱6⟰ ⟱6⟰ ⟱6⟰ ⟱6⟰ ⟱6⟰ ⟱6⟰ ⟱6⟰ ⟱6⟰ ⟱6⟰ ⟱6⟰ ⟱6⟰ ⟱6⟰ ⟱6⟰ ⟱6⟰ ⟱6⟰ ⟱6⟰ ⟱6⟰ ⟱6⟰ ⟱6⟰ ⟱6⟰ ⟱6⟰ ⟱6⟰ ⟱6⟰ ⟱6⟰ ⟱6⟰ ⟱6⟰ ⟱6⟰ ⟱6⟰ ⟱6⟰ ⟱6⟰ ⟱6⟰ ⟱6⟰
 						strToRtn_ += f"""{NTAB(2)}{MARK2ENDLN(BC2)}{NTAB(3)}{CBRCE},{NEWLINE}{thisDEV_MYNAME_}{NEWLINE}"""
 						strToRtn1_ += f"""{NTAB(2)}{MARK2ENDLN(BC2)}{NTAB(3)}{CBRCE},{NEWLINE}"""
 						strToRtn2_ += f"""{NTAB(2)}{MARK2ENDLN(BC2)}{NTAB(3)}{CBRCE},{NEWLINE}"""
 						strToRtn3_ += f"""{NTAB(2)}{MARK2ENDLN(BC2)}{NTAB(3)}{CBRCE},{NEWLINE}"""
 
-						# ⥣6 ⥣6 ⥣6 ⥣6 ⥣6 ⥣6 ⥣6 ⥣6 ⥣6 ⥣6 ⥣6 ⥣6 ⥣6 ⥣6 ⥣6 ⥣6 ⥣6 ⥣6 ⥣6 ⥣6 ⥣6 ⥣6 ⥣6 ⥣6 ⥣6 ⥣6 ⥣6 ⥣6 ⥣6 ⥣6 ⥣6 ⥣6 ⥣6 ⥣6 ⥣6 ⥣6 ⥣6 ⥣6 ⥣6 ⥣6 ⥣6 ⥣6 ⥣6 ⥣6 ⥣6 ⥣6 ⥣6 ⥣6 ⥣6 ⥣6 ⥣6 ⥣6 ⥣6 ⥣6
-					# ⥣5 ⥣5 ⥣5 ⥣5 ⥣5 ⥣5 ⥣5 ⥣5 ⥣5 ⥣5 ⥣5 ⥣5 ⥣5 ⥣5 ⥣5 ⥣5 ⥣5 ⥣5 ⥣5 ⥣5 ⥣5 ⥣5 ⥣5 ⥣5 ⥣5 ⥣5 ⥣5 ⥣5 ⥣5 ⥣5 ⥣5 ⥣5 ⥣5 ⥣5 ⥣5 ⥣5 ⥣5 ⥣5 ⥣5 ⥣5 ⥣5 ⥣5 ⥣5 ⥣5 ⥣5 ⥣5 ⥣5 ⥣5 ⥣5 ⥣5 ⥣5 ⥣5 ⥣5 ⥣5
+						# ⟰6 ⟰6 ⟰6 ⟰6 ⟰6 ⟰6 ⟰6 ⟰6 ⟰6 ⟰6 ⟰6 ⟰6 ⟰6 ⟰6 ⟰6 ⟰6 ⟰6 ⟰6 ⟰6 ⟰6 ⟰6 ⟰6 ⟰6 ⟰6 ⟰6 ⟰6 ⟰6 ⟰6 ⟰6 ⟰6 ⟰6 ⟰6 ⟰6 ⟰6 ⟰6 ⟰6 ⟰6 ⟰6 ⟰6 ⟰6 ⟰6 ⟰6 ⟰6 ⟰6 ⟰6 ⟰6 ⟰6 ⟰6 ⟰6 ⟰6 ⟰6 ⟰6 ⟰6 ⟰6
+					# ⟰5 ⟰5 ⟰5 ⟰5 ⟰5 ⟰5 ⟰5 ⟰5 ⟰5 ⟰5 ⟰5 ⟰5 ⟰5 ⟰5 ⟰5 ⟰5 ⟰5 ⟰5 ⟰5 ⟰5 ⟰5 ⟰5 ⟰5 ⟰5 ⟰5 ⟰5 ⟰5 ⟰5 ⟰5 ⟰5 ⟰5 ⟰5 ⟰5 ⟰5 ⟰5 ⟰5 ⟰5 ⟰5 ⟰5 ⟰5 ⟰5 ⟰5 ⟰5 ⟰5 ⟰5 ⟰5 ⟰5 ⟰5 ⟰5 ⟰5 ⟰5 ⟰5 ⟰5 ⟰5
 
-	# ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ SCTN45 device PROFILE BTNTYPEDICT REPEATDICT
-		# ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ for thisDEV_MYNAME_, thisVal1_ in FMDO_SCTN0405_PROFDICT.items():
-			# ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣
-				# ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣
+	# ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ SCTN45 device PROFILE BTNTYPEDICT REPEATDICT
+		# ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ for thisDEV_MYNAME_, thisVal1_ in FMDO_SCTN0405_PROFDICT.items():
+			# ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰ ⟱3⟰
+				# ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰ ⟱4⟰
 				strToRtn_ += f"""{NTAB(2)}{CBRCE},{NEWLINE}{NTAB(3)}{MARK3ENDLN(BC2)}{NEWLINE}{MK2}"""
 				strToRtn1_ += f"""{NTAB(2)}{CBRCE},{NEWLINE}{NTAB(3)}{MARK3ENDLN(BC2)}{NEWLINE}{MK2}"""
 				strToRtn2_ += f"""{NTAB(2)}{CBRCE},{NEWLINE}{NTAB(3)}{MARK3ENDLN(BC2)}{NEWLINE}{MK2}"""
 				strToRtn3_ += f"""{NTAB(2)}{CBRCE},{NEWLINE}{NTAB(3)}{MARK3ENDLN(BC2)}{NEWLINE}{MK2}"""
 
-				# ⥣4 ⥣4 ⥣4 ⥣4 ⥣4 ⥣4 ⥣4 ⥣4 ⥣4 ⥣4 ⥣4 ⥣4 ⥣4 ⥣4 ⥣4 ⥣4 ⥣4 ⥣4 ⥣4 ⥣4 ⥣4 ⥣4 ⥣4 ⥣4 ⥣4 ⥣4 ⥣4 ⥣4 ⥣4 ⥣4 ⥣4 ⥣4 ⥣4 ⥣4 ⥣4 ⥣4 ⥣4 ⥣4 ⥣4 ⥣4 ⥣4 ⥣4 ⥣4 ⥣4 ⥣4 ⥣4 ⥣4 ⥣4 ⥣4 ⥣4 ⥣4 ⥣4 ⥣4 ⥣4
-			# ⥣3 ⥣3 ⥣3 ⥣3 ⥣3 ⥣3 ⥣3 ⥣3 ⥣3 ⥣3 ⥣3 ⥣3 ⥣3 ⥣3 ⥣3 ⥣3 ⥣3 ⥣3 ⥣3 ⥣3 ⥣3 ⥣3 ⥣3 ⥣3 ⥣3 ⥣3 ⥣3 ⥣3 ⥣3 ⥣3 ⥣3 ⥣3 ⥣3 ⥣3 ⥣3 ⥣3 ⥣3 ⥣3 ⥣3 ⥣3 ⥣3 ⥣3 ⥣3 ⥣3 ⥣3 ⥣3 ⥣3 ⥣3 ⥣3 ⥣3 ⥣3 ⥣3 ⥣3 ⥣3
-	# ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ SCTN45 device PROFILE BTNTYPEDICT REPEATDICT
-		# ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ for thisDEV_MYNAME_, thisVal1_ in FMDO_SCTN0405_PROFDICT.items():
+				# ⟰4 ⟰4 ⟰4 ⟰4 ⟰4 ⟰4 ⟰4 ⟰4 ⟰4 ⟰4 ⟰4 ⟰4 ⟰4 ⟰4 ⟰4 ⟰4 ⟰4 ⟰4 ⟰4 ⟰4 ⟰4 ⟰4 ⟰4 ⟰4 ⟰4 ⟰4 ⟰4 ⟰4 ⟰4 ⟰4 ⟰4 ⟰4 ⟰4 ⟰4 ⟰4 ⟰4 ⟰4 ⟰4 ⟰4 ⟰4 ⟰4 ⟰4 ⟰4 ⟰4 ⟰4 ⟰4 ⟰4 ⟰4 ⟰4 ⟰4 ⟰4 ⟰4 ⟰4 ⟰4
+			# ⟰3 ⟰3 ⟰3 ⟰3 ⟰3 ⟰3 ⟰3 ⟰3 ⟰3 ⟰3 ⟰3 ⟰3 ⟰3 ⟰3 ⟰3 ⟰3 ⟰3 ⟰3 ⟰3 ⟰3 ⟰3 ⟰3 ⟰3 ⟰3 ⟰3 ⟰3 ⟰3 ⟰3 ⟰3 ⟰3 ⟰3 ⟰3 ⟰3 ⟰3 ⟰3 ⟰3 ⟰3 ⟰3 ⟰3 ⟰3 ⟰3 ⟰3 ⟰3 ⟰3 ⟰3 ⟰3 ⟰3 ⟰3 ⟰3 ⟰3 ⟰3 ⟰3 ⟰3 ⟰3
+	# ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ SCTN45 device PROFILE BTNTYPEDICT REPEATDICT
+		# ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ for thisDEV_MYNAME_, thisVal1_ in FMDO_SCTN0405_PROFDICT.items():
 		strToRtn_ += f"""{NTAB(1)}{CBRCE},{NEWLINE}{NTAB(2)}{FOLD2ENDHERE}{NEWLINE}"""
 		strToRtn1_ += f"""{NTAB(1)}{CBRCE},{NEWLINE}{NTAB(2)}{FOLD2ENDHERE}{NEWLINE}"""
 		strToRtn2_ += f"""{NTAB(1)}{CBRCE},{NEWLINE}{NTAB(2)}{FOLD2ENDHERE}{NEWLINE}"""
 		strToRtn3_ += f"""{NTAB(1)}{CBRCE},{NEWLINE}{NTAB(2)}{FOLD2ENDHERE}{NEWLINE}"""
 
-		# ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 for thisDEV_MYNAME_, thisVal1_ in FMDO_SCTN0405_PROFDICT.items():
+		# ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 for thisDEV_MYNAME_, thisVal1_ in FMDO_SCTN0405_PROFDICT.items():
 	strToRtn_ += f"""{CBRCE}{NEWLINE}{NTAB(1)}{FOLD1ENDHERE}{NEWLINE}{NEWLINE}{strToRtn1_}{CBRCE}{NEWLINE}{NTAB(1)}{FOLD1ENDHERE}{NEWLINE}{NEWLINE}{strToRtn3_}{CBRCE}{NEWLINE}{NTAB(1)}{FOLD1ENDHERE}{NEWLINE}{NEWLINE}{strToRtn2_}{CBRCE}{NEWLINE}{NTAB(1)}{FOLD1ENDHERE}{NEWLINE}{NEWLINE}"""
-	# ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 SCTN45 device PROFILE BTNTYPEDICT REPEATDICT
+	# ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 SCTN45 device PROFILE BTNTYPEDICT REPEATDICT
 
-	# 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ SCTN46 device XLATE table
+	# 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ SCTN46 device XLATE table
 	strToRtn_ += f"""{makeAComment("SCTN0406 device XLATE table")}XLATETABLE = {OBRCE}{NEWLINE}{NTAB(1)}{FOLD1STARTHERELN}"""
 	for thisDEV_MYNAME_, entries_ in FMDO_SCTN0406_XLATEDICT.items():
 		strToRtn_ += f"""{NTAB(1)}{thisDEV_MYNAME_}: {OBRCE}{NEWLINE}{NTAB(2)}{FOLD2STARTHERELN}{entries_}{NTAB(1)}{CBRCE},{NEWLINE}{NTAB(2)}{FOLD2ENDHERELN}"""
 	strToRtn_ += f"""{CBRCE}{NEWLINE}{NTAB(1)}{FOLD1ENDHERELN}{NEWLINE}{NEWLINE}"""
-	# ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 SCTN46 device XLATE table
+	# ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 SCTN46 device XLATE table
 
-	# 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ SCTN49 DIR to BTN SIM translation
+	# 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ SCTN49 DIR to BTN SIM translation
 	strToRtn_ += f"""{makeAComment("SCTN0409 DIR to BTN SIM translation")}DIR2BTN = {OBRCE}{NEWLINE}{NTAB(1)}{FOLD1STARTHERELN}"""
 	for thisDEVT_, theseItems_ in FMDO_SCTN0409_DIRTRANSDICT.items():
 		strToRtn_ += f"""{NTAB(1)}{thisDEVT_}: {OBRCE}  # {FMDO_SCTN0409_DIRTRANSCMNTDICT[thisDEVT_]}{NEWLINE}{NTAB(2)}{FOLD2STARTHERELN}{theseItems_}{NTAB(1)}{CBRCE},{NEWLINE}{NTAB(2)}{FOLD2ENDHERELN}"""
 	strToRtn_ += f"""{CBRCE}{NEWLINE}{NTAB(1)}{FOLD1ENDHERELN}{NEWLINE}{NEWLINE}"""
-	# ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 SCTN49 DIR to BTN SIM translation
+	# ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 SCTN49 DIR to BTN SIM translation
 
 	strToRtn_ += f"""#{NEWLINE}#{NEWLINE}{makeAComment("end of managed section of DO.py")}#{NEWLINE}#{NEWLINE}{NEWLINE}{NEWLINE}"""
 
 	return strToRtn_
-	# fold here ⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1
+	# fold here ⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1
 # FM_MAKE_DO_ENDS
 
 
@@ -3124,18 +3124,18 @@ def makeDO():
 # makeFM
 # #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
 def makeFM():
-	# fold here ⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1
-	# 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥
+	# fold here ⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1
+	# 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱
 	strToRtn_ = ""
 	strToRtn_ += f"""{readFileToStr(FMTOP_NAME)}{readFileToStr(SCTN0102NAME)}"""
 
-	# ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣
+	# ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰
 	strToRtn_ += f"""{makeAComment("SCTN0003 TYPEs and lambda")}"""
 	for name_, value_ in FMCF_SCTN0003_TYPE_DICT.items():
 		strToRtn_ += f"""{name_} = {value_}  # {FMCF_SCTN0003_TYPE_CMNT_DICT[name_]}{NEWLINE}"""
 	strToRtn_ += NEWLINE + NEWLINE
 
-	# ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣
+	# ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰
 	strToRtn_ += makeAComment("SCTN0004 BTNS")
 	strToRtn1_ = ""
 	for name_, value_ in FMDO_SCTN0407_BTNSDICT.items():
@@ -3144,7 +3144,7 @@ def makeFM():
 			strToRtn1_ += f"""{NTAB(1)}{name_},{NEWLINE}"""
 	strToRtn_ += f"""{NEWLINE}{NEWLINE}BTNSHOLDABLELIST = {OBRKT}{NEWLINE}{strToRtn1_}{CBRKT}{NEWLINE}{NEWLINE}"""
 
-	## ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣
+	## ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰
 	strToRtn_ += f"""{makeAComment("SCTN0101 FMAX _DEF_")}"""
 	strToRtn01_ = ""
 	for name_, value_ in FMFM_SCTN0101_AX_DICT.items():
@@ -3152,27 +3152,27 @@ def makeFM():
 		strToRtn01_ += f"""{NTAB(1)}{name_},  # {FMFM_SCTN0101_AX_CMNT_DICT[name_]}{NEWLINE}"""
 	strToRtn_ += f"""{NEWLINE}{NEWLINE}FMAXFM_AXLST = {OBRKT}{NEWLINE}{strToRtn01_}{CBRKT}{NEWLINE}{NEWLINE}{NEWLINE}"""
 
-	# ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣
+	# ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰
 	strToRtn_ += f"""{makeAComment("SCTN0102 VAL _DEF_")}"""
 	strToRtn01_ = ""
 	for name_, value_ in FMFM_SCTN0102_VAL_DICT.items():
 		strToRtn_ += f"""{name_} = {OBRCE}{CBRCE}  # {FMFM_SCTN0102_VAL_CMNT_DICT[name_]}{NEWLINE}"""
 	strToRtn_ += f"""{NEWLINE}{NEWLINE}"""
 
-	# ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣
+	# ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰
 	strToRtn_ += f"""{makeAComment("SCTN0103 _DICT_ _DEF_")}"""
 	strToRtn01_ = ""
 	for name_, value_ in FMFM_SCTN0103_DICT_DICT.items():
 		strToRtn_ += f"""{name_} = {OBRCE}{CBRCE}  # {FMFM_SCTN0103_DICT_CMNT_DICT[name_]}{NEWLINE}"""
 	strToRtn_ += f"""{NEWLINE}{NEWLINE}"""
 
-	# ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣
+	# ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰
 	strToRtn_ += f"""{makeAComment("SCTN0104 _LIST_ _DEF_")}"""
 	for name_, value_ in FMFM_SCTN0104_LIST_DICT.items():
 		strToRtn_ += f"""{name_} = {value_}  # {FMFM_SCTN0104_LIST_CMNT_DICT[name_]}{NEWLINE}"""
 	strToRtn_ += f"""{NEWLINE}{NEWLINE}{makeAWideComment("end of managed portions of FM.py")}{NEWLINE}{NEWLINE}"""
 
-	# ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣
+	# ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰
 	strToRtn_ += f"""{NTAB(1)}global {BKSLSH}{NEWLINE}"""
 	for key_ in FMFM_SCTN0103_DICT_DICT:
 		strToRtn_ += f"""{NTAB(2)}{key_}, {BKSLSH}{NEWLINE}"""
@@ -3181,9 +3181,9 @@ def makeFM():
 	strToRtn_ = f"""{strToRtn_[:-4]}{NEWLINE}"""
 
 	return strToRtn_
-	# ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1
+	# ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1
 
-	# fold here ⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1
+	# fold here ⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1
 # FM_MAKE_FM_ENDS
 
 
@@ -3243,10 +3243,10 @@ def parseTBGLST(FDTBGLST):
 		FMDO_SCTN040A_HBIKEYLIST, \
 		FMDO_SCTN040A_HBIRELLIST, \
 		FMFM_SCTN0004_BTNS_HOLDABLE_LIST
-	# fold here ⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1
+	# fold here ⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1
 
 	for thisItem_ in TBGLST:
-		# 2⥥ 2⥥ 2⥥ 2⥥ 2⥥ 2⥥ 2⥥ 2⥥ 2⥥ 2⥥ 2⥥ 2⥥ 2⥥ 2⥥ 2⥥ 2⥥ 2⥥ 2⥥ 2⥥ 2⥥ 2⥥ 2⥥ 2⥥ 2⥥ 2⥥ 2⥥ 2⥥ 2⥥ 2⥥ 2⥥ 2⥥ 2⥥ 2⥥ 2⥥ 2⥥ 2⥥ 2⥥ 2⥥ 2⥥ 2⥥ 2⥥ 2⥥ 2⥥ 2⥥ 2⥥ 2⥥ 2⥥ 2⥥ 2⥥ 2⥥ 2⥥ 2⥥ 2⥥ 2⥥ for thisItem_ in TBGLST:
+		# 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ for thisItem_ in TBGLST:
 
 		FDTBGLST.write(f"{explodeItem(thisItem_)}")
 		thisItemLen_ = len(thisItem_)
@@ -3263,18 +3263,18 @@ def parseTBGLST(FDTBGLST):
 			doErrorItem("not a supported action in FM", thisItem_)
 			continue
 
-	# ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ for thisItem_ in TBGLST:
-		# ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ if thisAX_ …
+	# ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ for thisItem_ in TBGLST:
+		# ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ if thisAX_ …
 		if thisAX_ is None or thisAX_ == FMAX_NOP:
-			# fold here ⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2
+			# fold here ⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2
 			continue
-			# fold here ⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2
+			# fold here ⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2
 
 	# FM_PARSE_CF_BEGINS
-	# ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ for thisItem_ in TBGLST:
-		# ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ if thisAX_ …
+	# ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ for thisItem_ in TBGLST:
+		# ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ if thisAX_ …
 		elif thisAX_ == FMAXCF_SCTN0003_LAMBDA_DEF:
-			# fold here ⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2
+			# fold here ⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2
 			if thisItemLen_ != 5:
 				doErrorItem("not 5 items", thisItem_)
 				continue
@@ -3283,12 +3283,12 @@ def parseTBGLST(FDTBGLST):
 			FMCF_SCTN0003_TYPE_DICT[thisLambdaName_] = f"lambda {thisLambdaVal_}"
 			FMCF_SCTN0003_TYPE_CMNT_DICT[thisLambdaName_] = "{thisComment_}"
 			continue
-			# fold here ⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2
+			# fold here ⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2
 
-	# ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ for thisItem_ in TBGLST:
-		# ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ if thisAX_ …
+	# ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ for thisItem_ in TBGLST:
+		# ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ if thisAX_ …
 		elif thisAX_ == FMAXCF_SCTN0003_TYPE_DEF:
-			# fold here ⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2
+			# fold here ⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2
 			if thisItemLen_ != 5:
 				doErrorItem("not 5 items", thisItem_)
 				continue
@@ -3297,12 +3297,12 @@ def parseTBGLST(FDTBGLST):
 			FMCF_SCTN0003_TYPE_DICT[thisTypeName_] = f"{DBLQT}{thisType_}{DBLQT}"
 			FMCF_SCTN0003_TYPE_CMNT_DICT[thisTypeName_] = f"{thisComment_}"
 			continue
-			# fold here ⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2
+			# fold here ⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2
 
-	# ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ for thisItem_ in TBGLST:
-		# ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ if thisAX_ …
+	# ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ for thisItem_ in TBGLST:
+		# ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ if thisAX_ …
 		elif thisAX_ == FMAXCF_SCTN0201_STR_DEF:
-			# fold here ⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2
+			# fold here ⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2
 			if thisItemLen_ != 5:
 				doErrorItem("not 5 items", thisItem_)
 				continue
@@ -3311,12 +3311,12 @@ def parseTBGLST(FDTBGLST):
 			FMCF_SCTN0201_DEF_DICT[thisValName_] = f"{DBLQT}{thisVal_}{DBLQT}"
 			FMCF_SCTN0201_DEF_CMNT_DICT[thisValName_] = f"{thisComment_}"
 			continue
-			# fold here ⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2
+			# fold here ⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2
 
-	# ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ for thisItem_ in TBGLST:
-		# ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ if thisAX_ …
+	# ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ for thisItem_ in TBGLST:
+		# ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ if thisAX_ …
 		elif thisAX_ == FMAXCF_SCTN0201_VAL_DEF:
-			# fold here ⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2
+			# fold here ⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2
 			if thisItemLen_ != 5:
 				doErrorItem("not 5 items", thisItem_)
 				continue
@@ -3325,12 +3325,12 @@ def parseTBGLST(FDTBGLST):
 			FMCF_SCTN0201_DEF_DICT[thisValName_] = f"{thisVal_}"
 			FMCF_SCTN0201_DEF_CMNT_DICT[thisValName_] = f"{thisComment_}"
 			continue
-			# fold here ⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2
+			# fold here ⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2
 
-	# ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ for thisItem_ in TBGLST:
-		# ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ if thisAX_ …
+	# ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ for thisItem_ in TBGLST:
+		# ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ if thisAX_ …
 		elif thisAX_ == FMAXCF_SCTN0202_OPTIONS_VAL_ADD:
-			# fold here ⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2
+			# fold here ⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2
 			if thisItemLen_ != 6:
 				doErrorItem("not 6 items", thisItem_)
 				continue
@@ -3338,12 +3338,12 @@ def parseTBGLST(FDTBGLST):
 			thisVal_ = thisItem_[3]
 			FMCF_SCTN0202_OPTIONS_DICT[thisName_] = f"{NTAB(1)}{DBLQT}{thisParam_}{DBLQT}: {thisVal_},  # {thisComment_}{NEWLINE}"
 			continue
-			# fold here ⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2
+			# fold here ⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2
 
-	# ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ for thisItem_ in TBGLST:
-		# ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ if thisAX_ …
+	# ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ for thisItem_ in TBGLST:
+		# ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ if thisAX_ …
 		elif thisAX_ == FMAXCF_SCTN0202_OPTIONSDICT_STR_ADD:
-			# fold here ⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2
+			# fold here ⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2
 			if thisItemLen_ != 5:
 				doErrorItem("not 5 items", thisItem_)
 				continue
@@ -3351,12 +3351,12 @@ def parseTBGLST(FDTBGLST):
 			thisVal_ = thisItem_[3]
 			FMCF_SCTN0202_OPTIONS_DICT[thisName_] = f"{NTAB(1)}{thisKey_}: {DBLQT}{thisVal_}{DBLQT},  # {thisComment_}{NEWLINE}"
 			continue
-			# fold here ⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2
+			# fold here ⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2
 
-	# ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ for thisItem_ in TBGLST:
-		# ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ if thisAX_ …
+	# ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ for thisItem_ in TBGLST:
+		# ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ if thisAX_ …
 		elif thisAX_ == FMAXCF_SCTN0202_OPTIONSDICT_VAL_ADD:
-			# fold here ⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2
+			# fold here ⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2
 			if thisItemLen_ != 5:
 				doErrorItem("not 5 items", thisItem_)
 				continue
@@ -3364,12 +3364,12 @@ def parseTBGLST(FDTBGLST):
 			thisVal_ = thisItem_[3]
 			FMCF_SCTN0202_OPTIONS_DICT[thisName_] = f"{NTAB(1)}{thisKey_}: {thisVal_},  # {thisComment_}{NEWLINE}"
 			continue
-			# fold here ⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2
+			# fold here ⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2
 
-	# ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ for thisItem_ in TBGLST:
-		# ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ if thisAX_ …
+	# ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ for thisItem_ in TBGLST:
+		# ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ if thisAX_ …
 		elif thisAX_ == FMAXCF_SCTN0204_LIST_DEF:
-			# fold here ⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2
+			# fold here ⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2
 			if thisItemLen_ != 4:
 				doErrorItem("not 4 items", thisItem_)
 				continue
@@ -3377,12 +3377,12 @@ def parseTBGLST(FDTBGLST):
 			FMCF_SCTN0204_LIST_DICT[thisListName_] = ""
 			FMCF_SCTN0204_LIST_CMNT_DICT[thisListName_] = f"{thisComment_}"
 			continue
-			# fold here ⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2
+			# fold here ⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2
 
-	# ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ for thisItem_ in TBGLST:
-		# ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ if thisAX_ …
+	# ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ for thisItem_ in TBGLST:
+		# ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ if thisAX_ …
 		elif thisAX_ == FMAXCF_SCTN0204_LIST_STR_ADD:
-			# fold here ⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2
+			# fold here ⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2
 			if thisItemLen_ != 5:
 				doErrorItem("not 5 items", thisItem_)
 				continue
@@ -3390,12 +3390,12 @@ def parseTBGLST(FDTBGLST):
 			thisVal_ = thisItem_[3]
 			FMCF_SCTN0204_LIST_DICT[thisListName_] += f"{NTAB(1)}f{DBLQT}{thisVal_}{DBLQT},  # {thisComment_}{NEWLINE}"
 			continue
-			# fold here ⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2
+			# fold here ⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2
 
-	# ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ for thisItem_ in TBGLST:
-		# ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ if thisAX_ …
+	# ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ for thisItem_ in TBGLST:
+		# ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ if thisAX_ …
 		elif thisAX_ == FMAXCF_SCTN0204_LIST_STR_ADD:
-			# fold here ⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2
+			# fold here ⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2
 			if thisItemLen_ != 5:
 				doErrorItem("not 5 items", thisItem_)
 				continue
@@ -3403,12 +3403,12 @@ def parseTBGLST(FDTBGLST):
 			thisVal_ = thisItem_[3]
 			FMCF_SCTN0204_LIST_DICT[thisListName_] += f"{NTAB(1)}{DBLQT}{thisVal_}{DBLQT},  # {thisComment_}{NEWLINE}"
 			continue
-			# fold here ⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2
+			# fold here ⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2
 
-	# ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ for thisItem_ in TBGLST:
-		# ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ if thisAX_ …
+	# ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ for thisItem_ in TBGLST:
+		# ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ if thisAX_ …
 		elif thisAX_ == FMAXCF_SCTN0204_LIST_VAL_ADD:
-			# fold here ⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2
+			# fold here ⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2
 			if thisItemLen_ != 5:
 				doErrorItem("not 5 items", thisItem_)
 				continue
@@ -3416,14 +3416,14 @@ def parseTBGLST(FDTBGLST):
 			thisVal_ = thisItem_[3]
 			FMCF_SCTN0204_LIST_DICT[thisListName_] += f"{NTAB(1)}{thisVal_},  # {thisComment_}{NEWLINE}"
 			continue
-			# fold here ⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2
+			# fold here ⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2
 	# FM_PARSE_CF_ENDS
 
 	# FM_PARSE_DO_BEGINS
-	# ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ for thisItem_ in TBGLST:
-		# ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ if thisAX_ …
+	# ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ for thisItem_ in TBGLST:
+		# ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ if thisAX_ …
 		elif thisAX_ == FMAXDO_SCTN0401_DEVICEDEF:
-			# fold here ⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2
+			# fold here ⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2
 			if thisItemLen_ != 4:
 				doErrorItem("not 4 items", thisItem_)
 				continue
@@ -3435,12 +3435,12 @@ def parseTBGLST(FDTBGLST):
 			#	FMDO_SCTN0404_DEVICESDICT[thisDEV_MYNAME_] = {}
 			#FMDO_SCTN0404_DEVICESDICT[thisDEV_MYNAME_]["DEV_MYNAME"] = thisDEV_MYNAME_
 			continue
-			# fold here ⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2
+			# fold here ⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2
 
-	# ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ for thisItem_ in TBGLST:
-		# ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ if thisAX_ …
+	# ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ for thisItem_ in TBGLST:
+		# ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ if thisAX_ …
 		elif thisAX_ == FMAXDO_SCTN0401_DICTKEYDEF:
-			# fold here ⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2
+			# fold here ⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2
 			if thisItemLen_ != 4:
 				doErrorItem("not 4 items", thisItem_)
 				continue
@@ -3448,12 +3448,12 @@ def parseTBGLST(FDTBGLST):
 			FMDO_SCTN0401_DEVICEDEFDICT[thisKey_] = f"{thisKey_} = {DBLQT}{thisKey_}{DBLQT}"
 			FMDO_SCTN0401_DEVICEDEFCMNTDICT[thisKey_] = f"{thisComment_}"
 			continue
-			# fold here ⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2
+			# fold here ⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2
 
-	# ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ for thisItem_ in TBGLST:
-		# ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ if thisAX_ …
+	# ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ for thisItem_ in TBGLST:
+		# ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ if thisAX_ …
 		elif thisAX_ == FMAXDO_SCTN0401_LAMBDADEF:
-			# fold here ⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2
+			# fold here ⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2
 			if thisItemLen_ != 5:
 				doErrorItem("not 5 items", thisItem_)
 				continue
@@ -3462,12 +3462,12 @@ def parseTBGLST(FDTBGLST):
 			FMDO_SCTN0401_DEVICEDEFDICT[thisValName_] = f"{thisValName_} = lambda {thisVal_}"
 			FMDO_SCTN0401_DEVICEDEFCMNTDICT[thisValName_] = f"{thisComment_}"
 			continue
-			# fold here ⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2
+			# fold here ⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2
 
-	# ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ for thisItem_ in TBGLST:
-		# ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ if thisAX_ …
+	# ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ for thisItem_ in TBGLST:
+		# ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ if thisAX_ …
 		elif thisAX_ == FMAXDO_SCTN0401_STRDEF:
-			# fold here ⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2
+			# fold here ⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2
 			if thisItemLen_ != 5:
 				doErrorItem("not 5 items", thisItem_)
 				continue
@@ -3476,12 +3476,12 @@ def parseTBGLST(FDTBGLST):
 			FMDO_SCTN0401_DEVICEDEFDICT[thisValName_] = f"{thisValName_} = {DBLQT}{thisVal_}{DBLQT}"
 			FMDO_SCTN0401_DEVICEDEFCMNTDICT[thisValName_] = f"{thisComment_}"
 			continue
-			# fold here ⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2
+			# fold here ⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2
 
-	# ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ for thisItem_ in TBGLST:
-		# ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ if thisAX_ …
+	# ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ for thisItem_ in TBGLST:
+		# ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ if thisAX_ …
 		elif thisAX_ == FMAXDO_SCTN0401_VALDEF:
-			# fold here ⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2
+			# fold here ⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2
 			if thisItemLen_ != 5:
 				doErrorItem("not 5 items", thisItem_)
 				continue
@@ -3490,12 +3490,12 @@ def parseTBGLST(FDTBGLST):
 			FMDO_SCTN0401_DEVICEDEFDICT[thisValName_] = f"{thisValName_} = {thisVal_}"
 			FMDO_SCTN0401_DEVICEDEFCMNTDICT[thisValName_] = f"{thisComment_}"
 			continue
-			# fold here ⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2
+			# fold here ⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2
 
-	# ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ for thisItem_ in TBGLST:
-		# ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ if thisAX_ …
+	# ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ for thisItem_ in TBGLST:
+		# ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ if thisAX_ …
 		elif thisAX_ == FMAXDO_SCTN0402_LDIEABSDEF:
-			# fold here ⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2
+			# fold here ⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2
 			if thisItemLen_ != 5:
 				doErrorItem("not 5 items", thisItem_)
 				continue
@@ -3504,12 +3504,12 @@ def parseTBGLST(FDTBGLST):
 			FMDO_SCTN0402_LDIEDICT[thisName_] = f"IE(LD.EV_ABS.{thisIEStr_}, {thisIEVAL_})"
 			FMDO_SCTN0402_LDIECMNTDICT[thisName_] = f"{thisComment_}"
 			continue
-			# fold here ⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2
+			# fold here ⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2
 
-	# ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ for thisItem_ in TBGLST:
-		# ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ if thisAX_ …
+	# ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ for thisItem_ in TBGLST:
+		# ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ if thisAX_ …
 		elif thisAX_ == FMAXDO_SCTN0402_LDIEBTNDEF:
-			# fold here ⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2
+			# fold here ⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2
 			if thisItemLen_ != 5:
 				doErrorItem("not 5 items", thisItem_)
 				continue
@@ -3518,12 +3518,12 @@ def parseTBGLST(FDTBGLST):
 			FMDO_SCTN0402_LDIEDICT[thisName_] = f"IE(LD.EV_KEY.{thisIEStr_}, {thisIEVAL_})"
 			FMDO_SCTN0402_LDIECMNTDICT[thisName_] = f"{thisComment_}"
 			continue
-			# fold here ⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2
+			# fold here ⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2
 
-	# ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ for thisItem_ in TBGLST:
-		# ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ if thisAX_ …
+	# ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ for thisItem_ in TBGLST:
+		# ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ if thisAX_ …
 		elif thisAX_ == FMAXDO_SCTN0402_LDIEKEYDEF:
-			# fold here ⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2
+			# fold here ⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2
 			if thisItemLen_ != 5:
 				doErrorItem("not 5 items", thisItem_)
 				continue
@@ -3532,12 +3532,12 @@ def parseTBGLST(FDTBGLST):
 			FMDO_SCTN0402_LDIEDICT[thisName_] = f"IE(LD.EV_KEY.{thisIEStr_}, {thisIEVAL_})"
 			FMDO_SCTN0402_LDIECMNTDICT[thisName_] = f"{thisComment_}"
 			continue
-			# fold here ⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2
+			# fold here ⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2
 
-	# ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ for thisItem_ in TBGLST:
-		# ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ if thisAX_ …
+	# ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ for thisItem_ in TBGLST:
+		# ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ if thisAX_ …
 		elif thisAX_ == FMAXDO_SCTN0402_LDIERELDEF:
-			# fold here ⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2
+			# fold here ⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2
 			if thisItemLen_ != 5:
 				doErrorItem("not 5 items", thisItem_)
 				continue
@@ -3547,12 +3547,12 @@ def parseTBGLST(FDTBGLST):
 			FMDO_SCTN0402_LDIECMNTDICT[thisName_] = f"{thisComment_}"
 			FMDO_SCTN0402_LDIERELLIST.append(thisName_)
 			continue
-			# fold here ⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2
+			# fold here ⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2
 
-	# ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ for thisItem_ in TBGLST:
-		# ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ if thisAX_ …
+	# ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ for thisItem_ in TBGLST:
+		# ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ if thisAX_ …
 		elif thisAX_ == FMAXDO_SCTN0402_LDIESPCLDEF:
-			# fold here ⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2
+			# fold here ⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2
 			if thisItemLen_ != 5:
 				doErrorItem("not 5 items", thisItem_)
 				continue
@@ -3562,12 +3562,12 @@ def parseTBGLST(FDTBGLST):
 			FMDO_SCTN0402_LDIECMNTDICT[thisName_] = f"{thisComment_}"
 			FMDO_SCTN0402_LDIESPCLLIST.append(thisName_)
 			continue
-			# fold here ⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2
+			# fold here ⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2
 
-	# ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ for thisItem_ in TBGLST:
-		# ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ if thisAX_ …
+	# ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ for thisItem_ in TBGLST:
+		# ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ if thisAX_ …
 		elif thisAX_ == FMAXDO_SCTN0402_LDIESYNDEF:
-			# fold here ⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2
+			# fold here ⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2
 			if thisItemLen_ != 5:
 				doErrorItem("not 5 items", thisItem_)
 				continue
@@ -3576,12 +3576,12 @@ def parseTBGLST(FDTBGLST):
 			FMDO_SCTN0402_LDIEDICT[thisName_] = f"IE(LD.EV_SYN.{thisIEStr_}, {thisIEVAL_})"
 			FMDO_SCTN0402_LDIECMNTDICT[thisName_] = f"{thisComment_}"
 			continue
-			# fold here ⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2
+			# fold here ⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2
 
-	# ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ for thisItem_ in TBGLST:
-		# ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ if thisAX_ …
+	# ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ for thisItem_ in TBGLST:
+		# ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ if thisAX_ …
 		elif thisAX_ == FMAXDO_SCTN0403_AXDEF:
-			# fold here ⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2
+			# fold here ⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2
 			if thisItemLen_ != 4:
 				doErrorItem("not 4 items", thisItem_)
 				continue
@@ -3591,12 +3591,12 @@ def parseTBGLST(FDTBGLST):
 			FMDO_SCTN0403_AXDEFDICT[thisAXName_] = ""
 			FMDO_SCTN0403_AXDEFCMNTDICT[thisAXName_] = f"{thisComment_}"
 			continue
-			# fold here ⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2
+			# fold here ⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2
 
-	# ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ for thisItem_ in TBGLST:
-		# ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ if thisAX_ …
+	# ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ for thisItem_ in TBGLST:
+		# ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ if thisAX_ …
 		elif thisAX_ == FMAXDO_SCTN0403_AXVALADD:
-			# fold here ⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2
+			# fold here ⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2
 			if thisItemLen_ != 5:
 				doErrorItem("not 5 items", thisItem_)
 				continue
@@ -3606,12 +3606,12 @@ def parseTBGLST(FDTBGLST):
 				FMDO_SCTN0403_AXDEFDICT[thisAXName_] = ""
 			FMDO_SCTN0403_AXDEFDICT[thisAXName_] += f"{NTAB(2)}{thisAXVal_},  # {thisComment_}{NEWLINE}"
 			continue
-			# fold here ⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2
+			# fold here ⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2
 
-	# ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ for thisItem_ in TBGLST:
-		# ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ if thisAX_ …
+	# ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ for thisItem_ in TBGLST:
+		# ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ if thisAX_ …
 		elif thisAX_ == FMAXDO_SCTN0404_DEVICEENTRYSTRADD:
-			# fold here ⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2
+			# fold here ⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2
 			if thisItemLen_ != 6:
 				doErrorItem("not 6 items", thisItem_)
 				continue
@@ -3622,12 +3622,12 @@ def parseTBGLST(FDTBGLST):
 				FMDO_SCTN0404_DEVICESDICT[thisDEV_MYNAME_] = {}
 			FMDO_SCTN0404_DEVICESDICT[thisDEV_MYNAME_][thisDEV_key_] = f"{DBLQT}{thisVal_}{DBLQT},  # {thisComment_}"
 			continue
-			# fold here ⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2
+			# fold here ⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2
 
-	# ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ for thisItem_ in TBGLST:
-		# ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ if thisAX_ …
+	# ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ for thisItem_ in TBGLST:
+		# ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ if thisAX_ …
 		elif thisAX_ == FMAXDO_SCTN0404_DEVICEENTRYVALADD:
-			# fold here ⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2
+			# fold here ⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2
 			if thisItemLen_ != 6:
 				doErrorItem("not 6 items", thisItem_)
 				continue
@@ -3639,12 +3639,12 @@ def parseTBGLST(FDTBGLST):
 				FMDO_SCTN0404_DEVICESDICT[thisDEV_MYNAME_] = {}
 			FMDO_SCTN0404_DEVICESDICT[thisDEV_MYNAME_][thisDEV_key_] = f"{thisVal_},  # {thisComment_}"
 			continue
-			# fold here ⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2
+			# fold here ⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2
 
-	# ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ for thisItem_ in TBGLST:
-		# ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ if thisAX_ …
+	# ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ for thisItem_ in TBGLST:
+		# ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ if thisAX_ …
 		elif thisAX_ == FMAXDO_SCTN0405_HOLDABLEADD1:
-			# fold here ⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2
+			# fold here ⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2
 			if thisItemLen_ != 9:
 				doErrorItem("not 9 items", thisItem_)
 				continue
@@ -3682,12 +3682,12 @@ def parseTBGLST(FDTBGLST):
 			FMDO_SCTN0405_BTNNDXDICT[thisDEV_MYNAME_][thisHOLDABLE_][thisNOTHOLDABLE_] = f"0,  # {thisComment_}"
 
 			continue
-			# fold here ⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2
+			# fold here ⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2
 
-	# ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ for thisItem_ in TBGLST:
-		# ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ if thisAX_ …
+	# ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ for thisItem_ in TBGLST:
+		# ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ if thisAX_ …
 		elif thisAX_ == FMAXDO_SCTN0405_HOLDABLEADD2:
-			# fold here ⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2
+			# fold here ⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2
 			if thisItemLen_ != 10:
 				doErrorItem("not 10 items", thisItem_)
 				continue
@@ -3734,12 +3734,12 @@ def parseTBGLST(FDTBGLST):
 			FMDO_SCTN0405_BTNNDXDICT[thisDEV_MYNAME_][thisHOLDABLE1_][thisHOLDABLE2_][thisNOTHOLDABLE_] = f"0,  # {thisComment_}"
 
 			continue
-			# fold here ⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2
+			# fold here ⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2
 
-	# ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ for thisItem_ in TBGLST:
-		# ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ if thisAX_ …
+	# ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ for thisItem_ in TBGLST:
+		# ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ if thisAX_ …
 		elif thisAX_ == FMAXDO_SCTN0405_NOTHOLDABLEADD1:
-			# fold here ⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2
+			# fold here ⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2
 			if thisItemLen_ != 8:
 				doErrorItem("not 8 items", thisItem_)
 				continue
@@ -3768,12 +3768,12 @@ def parseTBGLST(FDTBGLST):
 			FMDO_SCTN0405_BTNNDXDICT[thisDEV_MYNAME_][thisNOTHOLDABLE_] = f"0,  # {thisComment_}"
 
 			continue
-			# fold here ⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2
+			# fold here ⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2
 
-	# ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ for thisItem_ in TBGLST:
-		# ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ if thisAX_ …
+	# ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ for thisItem_ in TBGLST:
+		# ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ if thisAX_ …
 		elif thisAX_ == FMAXDO_SCTN0406_XLATEADD:
-			# fold here ⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2
+			# fold here ⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2
 			if thisItemLen_ != 6:
 				doErrorItem("not 6 items", thisItem_)
 				continue
@@ -3784,12 +3784,12 @@ def parseTBGLST(FDTBGLST):
 				FMDO_SCTN0406_XLATEDICT[thisDEV_MYNAME_] = ""
 			FMDO_SCTN0406_XLATEDICT[thisDEV_MYNAME_] += f"{NTAB(2)}{thisDEV_BTN}: {thisDEV_COMMON},  # {thisComment_}{NEWLINE}"
 			continue
-			# fold here ⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2
+			# fold here ⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2
 
-	# ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ for thisItem_ in TBGLST:
-		# ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ if thisAX_ …
+	# ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ for thisItem_ in TBGLST:
+		# ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ if thisAX_ …
 		elif thisAX_ == FMAXDO_SCTN0407_BTNSDEF:
-			# fold here ⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2
+			# fold here ⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2
 			if thisItemLen_ != 5:
 				doErrorItem("not 5 items", thisItem_)
 				continue
@@ -3802,12 +3802,12 @@ def parseTBGLST(FDTBGLST):
 				BTNSHOLDABLELIST.append(f"{thisBTNName_}")
 			FMDO_SCTN0407_BTNSCMNTDICT[thisBTNName_] = f"{thisComment_}"
 			continue
-			# fold here ⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2
+			# fold here ⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2
 
-	# ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ for thisItem_ in TBGLST:
-		# ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ if thisAX_ …
+	# ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ for thisItem_ in TBGLST:
+		# ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ if thisAX_ …
 		elif thisAX_ == FMAXDO_SCTN0408_EVTYPEDEF:
-			# fold here ⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2
+			# fold here ⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2
 			if thisItemLen_ != 4:
 				doErrorItem("not 4 items", thisItem_)
 				continue
@@ -3818,12 +3818,12 @@ def parseTBGLST(FDTBGLST):
 				FMDO_SCTN0408_TYPESDICT[thisDEVT_] = []
 			FMDO_SCTN0408_TYPESCMNTDICT[thisDEVT_] = f"{thisComment_}"
 			continue
-			# fold here ⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2
+			# fold here ⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2
 
-	# ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ for thisItem_ in TBGLST:
-		# ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ if thisAX_ …
+	# ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ for thisItem_ in TBGLST:
+		# ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ if thisAX_ …
 		elif thisAX_ == FMAXDO_SCTN0408_EVTYPELST:
-			# fold here ⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2
+			# fold here ⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2
 			if thisItemLen_ != 5:
 				doErrorItem("not 5 items", thisItem_)
 				continue
@@ -3833,12 +3833,12 @@ def parseTBGLST(FDTBGLST):
 				FMDO_SCTN0408_TYPESDICT[thisDEVT_] = []
 			FMDO_SCTN0408_TYPESDICT[thisDEVT_].append(f"{thisDEVTCD_},  # {thisComment_}")
 			continue
-			# fold here ⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2
+			# fold here ⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2
 
-	# ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ for thisItem_ in TBGLST:
-		# ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ if thisAX_ …
+	# ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ for thisItem_ in TBGLST:
+		# ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ if thisAX_ …
 		elif thisAX_ == FMAXDO_SCTN0409_DIRTRANSDEVDEF:
-			# fold here ⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2
+			# fold here ⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2
 			if thisItemLen_ != 4:
 				doErrorItem("not 4 items", thisItem_)
 				continue
@@ -3847,12 +3847,12 @@ def parseTBGLST(FDTBGLST):
 				FMDO_SCTN0409_DIRTRANSDICT[thisDEVT_] = ""
 			FMDO_SCTN0409_DIRTRANSCMNTDICT[thisDEVT_] = f"{thisComment_}"
 			continue
-			# fold here ⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2
+			# fold here ⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2
 
-	# ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ for thisItem_ in TBGLST:
-		# ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ if thisAX_ …
+	# ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ for thisItem_ in TBGLST:
+		# ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ if thisAX_ …
 		elif thisAX_ == FMAXDO_SCTN0409_DIRTRANSVALADD:
-			# fold here ⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2
+			# fold here ⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2
 			if thisItemLen_ != 6:
 				doErrorItem("not 6 items", thisItem_)
 				continue
@@ -3863,73 +3863,73 @@ def parseTBGLST(FDTBGLST):
 				FMDO_SCTN0409_DIRTRANSDICT[thisDEVT_] = ""
 			FMDO_SCTN0409_DIRTRANSDICT[thisDEVT_] += f"{NTAB(2)}{thisKey_}: {thisVal_},  # {thisComment_}{NEWLINE}"
 			continue
-			# fold here ⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2
-	# ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ for thisItem_ in TBGLST:
-		# ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ if thisAX_ …
+			# fold here ⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2
+	# ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ for thisItem_ in TBGLST:
+		# ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ if thisAX_ …
 		elif thisAX_ == FMAXDO_SCTN040A_HBIABSADD:
-			# fold here ⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2
+			# fold here ⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2
 			if thisItemLen_ != 4:
 				doErrorItem("not 4 items", thisItem_)
 				continue
 			thisHBIVal_ = thisItem_[2]
 			FMDO_SCTN040A_HBIABSLIST.append(f"{thisHBIVal_}{CPAREN}  # {thisComment_}")
 			continue
-			# fold here ⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2
+			# fold here ⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2
 
-	# ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ for thisItem_ in TBGLST:
-		# ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ if thisAX_ …
+	# ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ for thisItem_ in TBGLST:
+		# ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ if thisAX_ …
 		elif thisAX_ == FMAXDO_SCTN040A_HBIBTNADD:
-			# fold here ⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2
+			# fold here ⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2
 			if thisItemLen_ != 4:
 				doErrorItem("not 4 items", thisItem_)
 				continue
 			thisHBIVal_ = thisItem_[2]
 			FMDO_SCTN040A_HBIBTNLIST.append(f"{thisHBIVal_}{CPAREN}  # {thisComment_}")
 			continue
-			# fold here ⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2
+			# fold here ⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2
 
-	# ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ for thisItem_ in TBGLST:
-		# ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ if thisAX_ …
+	# ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ for thisItem_ in TBGLST:
+		# ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ if thisAX_ …
 		elif thisAX_ == FMAXDO_SCTN040A_HBIKEYADD:
-			# fold here ⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2
+			# fold here ⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2
 			if thisItemLen_ != 4:
 				doErrorItem("not 4 items", thisItem_)
 				continue
 			thisHBIVal_ = thisItem_[2]
 			FMDO_SCTN040A_HBIKEYLIST.append(f"{thisHBIVal_}{CPAREN}  # {thisComment_}")
 			continue
-			# fold here ⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2
+			# fold here ⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2
 
-	# ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ for thisItem_ in TBGLST:
-		# ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ if thisAX_ …
+	# ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ for thisItem_ in TBGLST:
+		# ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ if thisAX_ …
 		elif thisAX_ == FMAXDO_SCTN040A_HBIRELADD:
-			# fold here ⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2
+			# fold here ⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2
 			if thisItemLen_ != 4:
 				doErrorItem("not 4 items", thisItem_)
 				continue
 			thisHBIVal_ = thisItem_[2]
 			FMDO_SCTN040A_HBIRELLIST.append(f"{thisHBIVal_}{CPAREN}  # {thisComment_}")
 			continue
-			# fold here ⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2
+			# fold here ⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2
 	# FM_DO_PARSE_ENDS
 
 	# FM_PARSE_FM_BEGINS
-	# ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ for thisItem_ in TBGLST:
-		# ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ if thisAX_ …
+	# ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ for thisItem_ in TBGLST:
+		# ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ if thisAX_ …
 		elif thisAX_ == FMAXFM_SCTN0101_AX_DEF:
-			# fold here ⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2
+			# fold here ⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2
 			if thisItemLen_ != 3:
 				doErrorItem("not 3 items", thisItem_)
 				continue
 			FMFM_SCTN0101_AX_DICT[thisName_] = f"{DBLQT}{thisName_}{DBLQT}"
 			FMFM_SCTN0101_AX_CMNT_DICT[thisName_] = f"{thisComment_}"
 			continue
-			# fold here ⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2
+			# fold here ⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2
 
-	# ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ for thisItem_ in TBGLST:
-		# ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ if thisAX_ …
+	# ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ for thisItem_ in TBGLST:
+		# ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ if thisAX_ …
 		elif thisAX_ == FMAXFM_SCTN0102_VAL_DEF:
-			# fold here ⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2
+			# fold here ⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2
 			if thisItemLen_ != 5:
 				doErrorItem("not 5 items", thisItem_)
 				continue
@@ -3938,47 +3938,47 @@ def parseTBGLST(FDTBGLST):
 			FMFM_SCTN0102_VAL_DICT[thisValName_] = thisVal_
 			FMFM_SCTN0102_VAL_CMNT_DICT[thisValName_] = f"{thisComment_}"
 			continue
-			# fold here ⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2
+			# fold here ⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2
 
-	# ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ for thisItem_ in TBGLST:
-		# ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ if thisAX_ …
+	# ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ for thisItem_ in TBGLST:
+		# ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ if thisAX_ …
 		elif thisAX_ == FMAXFM_SCTN0103_DICT_DEF:
-			# fold here ⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2
+			# fold here ⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2
 			if thisItemLen_ != 3:
 				doErrorItem("not 3 items", thisItem_)
 				continue
 			FMFM_SCTN0103_DICT_DICT[thisName_] = f"{OBRCE}{CBRCE}"
 			FMFM_SCTN0103_DICT_CMNT_DICT[thisName_] = f"{thisComment_}"
 			continue
-			# fold here ⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2
+			# fold here ⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2
 
-	# ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ for thisItem_ in TBGLST:
-		# ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ if thisAX_ …
+	# ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ ⟱1⟰ for thisItem_ in TBGLST:
+		# ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ ⟱2⟰ if thisAX_ …
 		elif thisAX_ == FMAXFM_SCTN0104_LIST_DEF:
-			# fold here ⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2
+			# fold here ⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2
 			if thisItemLen_ != 3:
 				doErrorItem("not 3 items", thisItem_)
 				continue
 			FMFM_SCTN0104_LIST_DICT[thisName_] = f"{OBRKT}{CBRKT}"
 			FMFM_SCTN0104_LIST_CMNT_DICT[thisName_] = f"{thisComment_}"
 			continue
-			# fold here ⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2
+			# fold here ⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2
 	# FM_PARSE_FM_ENDS
 
-		# ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2
-	# ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1
+		# ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2
+	# ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1 ⟰1
 
-	# fold here ⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1
+	# fold here ⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1
 
 
 # #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
 # __main__
 # #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
 def __main__():
-	# fold here ⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1
+	# fold here ⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1⟱1
 
 	# FM_MAIN_FM_BEGINS
-	# fold here ⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2
+	# fold here ⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2
 	with open(TBGLST_NAME, "tw") as FDOut:
 		FDOut.write(f"TBGLST = {OBRKT}{NEWLINE}{NTAB(1)}{FOLD1STARTHERE}{NEWLINE}")
 		parseTBGLST(FDOut)
@@ -3986,29 +3986,29 @@ def __main__():
 	with open(FM_NAME, "tw") as FDOut:
 		strToWrt_ = makeFM()
 		FDOut.writelines(strToWrt_)
-	# fold here ⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2
+	# fold here ⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2
 	# FM_MAIN_FM_ENDS
 
 	# FM_MAIN_CF_BEGINS
-	# fold here ⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2
+	# fold here ⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2
 	with open(CF_NAME, "tw") as FDOut:
 		strToWrt_ = makeCF()
 		FDOut.writelines(strToWrt_)
-	# fold here ⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2
+	# fold here ⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2
 	# FM_MAIN_CF_ENDS
 
 	# FM_MAIN_DO_BEGINS
-	# fold here ⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2
+	# fold here ⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2⟱2
 	with open(DO_NAME, "tw") as FDOut:
 		strToWrt_ = makeDO()
 		FDOut.writelines(strToWrt_)
 	with open(DOHBI_NAME, "tw") as FDOut:
 		strToWrt_ = makeDOHBI()
 		FDOut.writelines(strToWrt_)
-	# fold here ⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2
+	# fold here ⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2⟰2
 	# FM_MAIN_DO_ENDS
 
-	# fold here ⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1
+	# fold here ⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1⟰1
 
 
 if __name__ == "__main__":
