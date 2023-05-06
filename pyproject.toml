@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "csmasherd"
+version = "0.1.0"
+description = "Daemon sets up a uinput keyboard/mouse device and waits for clients to send events to it."
+authors = ["GaelicGrime <will.angus.blaylock@gmail.com>"]
+license = "GPL3"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3"
+libevdev = "^0.11"
+multiprocessing = "^2.6.2.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

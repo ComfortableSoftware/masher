@@ -1,0 +1,67 @@
+// cSpell Settings
+{
+  // Version of the setting file.  Always 0.2
+  "version": "0.2",
+  // language - current active spelling language
+  "language": "en",
+  // words - list of words to be always considered correct
+  "words": [
+    "CAPSLOCK",
+    "CBM",
+    "EJECTCD",
+    "HANGEUL",
+    "HANJA",
+    "HBI",
+    "HENKAN",
+    "HWHEEL",
+    "KATAKANAHIRAGANA",
+    "KPASTERISK",
+    "KPCOMMA",
+    "KPDOT",
+    "KPENTER",
+    "KPEQUAL",
+    "KPJPCOMMA",
+    "KPLEFTPAREN",
+    "KPMINUS",
+    "KPPLUS",
+    "KPRIGHTPAREN",
+    "KPSLASH",
+    "LEFTALT",
+    "LEFTBRACE",
+    "LEFTCTRL",
+    "LEFTMETA",
+    "MSEBTNBAK",
+    "MSEBTNFWD",
+    "MSEBTNLT",
+    "MSEBTNMID",
+    "MSEBTNRT",
+    "MSEBTNSIDE",
+    "MSEBTNTASK",
+    "MSEBTNXTRA",
+    "MUHENKAN",
+    "NEXTSONG",
+    "NUMLOCK",
+    "PAGEDOWN",
+    "PAGEUP",
+    "PKL",
+    "PLAYPAUSE",
+    "PREVIOUSSONG",
+    "RIGHTALT",
+    "RIGHTBRACE",
+    "RIGHTCTRL",
+    "RIGHTMETA",
+    "RO",
+    "SCROLLDOWN",
+    "SCROLLLOCK",
+    "SCROLLUP",
+    "STOPCD",
+    "SYSRQ",
+    "VOLUMEDOWN",
+    "VOLUMEUP",
+    "ZENKAKUHANKAKU"
+  ],
+  // flagWords - list of words to be always considered incorrect
+  // This is useful for offensive words and common spelling errors.
+  // For example "hte" should be "the"
+  "flagWords": ["hte"]
+}
