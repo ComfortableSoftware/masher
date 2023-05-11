@@ -17,20 +17,20 @@ setup(
   author="GaelicGrime",
   author_email="will.angus.blaylock@gmail.com",
   license="GPLv3",
-  name="_PROJECT_NAME_",
-  url="https://github.com/ComfortableSoftware/_PROJECT_NAME_",
+  name="masher",
+  url="https://github.com/ComfortableSoftware/masher",
   version="0.0.1",
-  package_dir={"_PROJECT_NAME_": "_PROJECT_NAME_"},
+  package_dir={"masher": "masher"},
   package_data={
-      "_PROJECT_NAME_": [
+      "masher": [
           "../doc/*",
       ]
   },
-  packages=["_PROJECT_NAME_"],
+  packages=find_packages(),
   install_requires=[
-      "CS-CF",
+      "CSCF",
   ],
   extras_require={
   },
-  scripts=["scripts/_PROJECT_NAME_"],
+  #scripts=["scripts/masher"],
 )
