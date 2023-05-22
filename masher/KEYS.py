@@ -2,47 +2,14 @@
 
 ALL_THE_AX_KEYS = {
     # 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱
+    "AX_ALT_SHIFT_M": "AX_ALT_SHIFT_M",
+    "AX_ESC":         "AX_ESC",
+    "AX_F6_MOVE":     "AX_F6_MOVE",
     # ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2
   }
 
 
-ALL_THE_NORMAL_KEYS = {
-    # 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱
-    "K_DEVICE":     "K_DEVICE",
-    "K_INDEX":      "K_INDEX",
-    "K_KEYS":       "K_KEYS",
-    "K_MODE":       "K_MODE",
-    "K_PAUSE":      "K_PAUSE",
-    "K_REPEAT":     "K_REPEAT",
-    "KD_CONNEXION": "KD_CONNEXION",
-    "KD_DEFT":      "KD_DEFT",
-    "KD_POWERMATE": "KD_POWERMATE",
-    "KD_RECOIL":    "KD_RECOIL",
-    "KD_SAITEK":    "KD_SAITEK",
-    "KD_SHANWAN":   "KD_SHANWAN",
-    "KM_NORMAL":    "KM_NORMAL",
-    "KM_QUEUE":     "KM_QUEUE",
-    "KM_SEQUENCE":  "KM_SEQUENCE",
-    "KP_00":        "KP_00",
-    "KP_01":        "KP_01",
-    "KP_02":        "KP_02",
-    "KP_03":        "KP_03",
-    "KP_05":        "KP_05",
-    "KP_10":        "KP_10",
-    "KP_25":        "KP_25",
-    "KP_NONE":      "KP_NONE",
-    "KR_00":        "KR_00",
-    "KR_01":        "KR_01",
-    "KR_02":        "KR_02",
-    "KR_03":        "KR_03",
-    "KR_04":        "KR_04",
-    "KR_05":        "KR_05",
-    "KR_NONE":      "KR_NONE",
-    # ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2
-  }
-
-
-ALL_THE_LD_KEYS = {
+ALL_THE_CONTROLLER_KEYS = {
     # 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱
     "GA_00_DN":                 "GA_00_DN",
     "GA_00_DNLT":               "GA_00_DNLT",
@@ -139,6 +106,37 @@ ALL_THE_LD_KEYS = {
     "GH_03_UP":                 "GH_03_UP",
     "GH_03_UPLT":               "GH_03_UPLT",
     "GH_03_UPRT":               "GH_03_UPRT",
+    # ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2
+}
+
+
+ALL_THE_DEVICE_KEYS = {
+    # 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱
+    "KD_CONNEXION": "KD_CONNEXION",
+    "KD_DEFT":      "KD_DEFT",
+    "KD_POWERMATE": "KD_POWERMATE",
+    "KD_RECOIL":    "KD_RECOIL",
+    "KD_SAITEK":    "KD_SAITEK",
+    "KD_SHANWAN":   "KD_SHANWAN",
+    # ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2
+}
+
+
+ALL_THE_NORMAL_KEYS = {
+    # 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱
+    "K_ACTIONS":    "K_ACTIONS",
+    "K_DEVICE":     "K_DEVICE",
+    "K_INDEX":      "K_INDEX",
+    "K_KEYS":       "K_KEYS",
+    "K_MODE":       "K_MODE",
+    "K_PAUSE":      "K_PAUSE",
+    "K_REPEAT":     "K_REPEAT",
+    # ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2
+  }
+
+
+ALL_THE_LD_KEYS = {
+    # 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱
     "KBD_0_HLD":                "KBD_0_HLD",
     "KBD_0_PRS":                "KBD_0_PRS",
     "KBD_0_RLS":                "KBD_0_RLS",
@@ -677,10 +675,47 @@ ALL_THE_LD_KEYS = {
   }
 
 
+ALL_THE_SPECIAL_EVENT_KEYS = {
+    # 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱
+    "KAX_LOAD_ACTIONS": "KAX_LOAD_ACTIONS",
+    "KAX_LOAD_PROFILE": "KAX_LOAD_PROFILE",
+    "KAX_NEXT_ACTIONS": "KAX_NEXT_ACTIONS",
+    "KAX_NEXT_PROFILE": "KAX_NEXT_PROFILE",
+    "KAX_PREV_ACTIONS": "KAX_PREV_ACTIONS",
+    "KAX_PREV_PROFILE": "KAX_PREV_PROFILE",
+    "KAX_SAVE_ACTIONS": "KAX_SAVE_ACTIONS",
+    "KAX_SAVE_PROFILE": "KAX_SAVE_PROFILE",
+    "KM_LOCKING":       "KM_LOCKING",
+    "KM_NORMAL":        "KM_NORMAL",
+    "KM_QUEUE":         "KM_QUEUE",
+    "KM_SEQUENCE":      "KM_SEQUENCE",
+    "KP_00":            "KP_00",
+    "KP_01":            "KP_01",
+    "KP_02":            "KP_02",
+    "KP_03":            "KP_03",
+    "KP_05":            "KP_05",
+    "KP_10":            "KP_10",
+    "KP_25":            "KP_25",
+    "KP_NONE":          "KP_NONE",
+    "KR_00":            "KR_00",
+    "KR_01":            "KR_01",
+    "KR_02":            "KR_02",
+    "KR_03":            "KR_03",
+    "KR_04":            "KR_04",
+    "KR_05":            "KR_05",
+    "KR_NONE":          "KR_NONE",
+
+    # ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2
+  }
+
+
 ALL_THE_KEYS = {}
+locals().update(ALL_THE_AX_KEYS)
+locals().update(ALL_THE_CONTROLLER_KEYS)
+locals().update(ALL_THE_DEVICE_KEYS)
 locals().update(ALL_THE_NORMAL_KEYS)
 locals().update(ALL_THE_LD_KEYS)
-
+locals().update(ALL_THE_SPECIAL_EVENT_KEYS)
 
 
 

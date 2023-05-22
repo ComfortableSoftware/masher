@@ -1,16 +1,17 @@
 
 # STANDARD DISCLAIMERS
 - My coding style has made it mostly unmodified through every language I have coded in since around 1977.
-  - The minor changes required have been a lot less painful than trying to keep up with the proposed standards for all of the languages I have encountered in that time,
-  - A far from exhaustive list of those languages is:
-    - Punch card DEC 10 and IBM System III Pascal.
-    - Punch card COBOL.
-    - Punch card FORTRAN on DEC 10 and 20.
-    - Motorola 6800, 6809, 68000-68060 assembly code.
-    - Apple and Super PET 2000 UCSD Pascal.
-    - Commodore CP/M Pascal.
-    - Python.
-    - Structured BASIC on Amiga machines.
-    - Highly modified but still recognizably on all forms of Microsoft BASIC that came on Apple, CBM, Atari, and other 8 and 16 bit machines or their first cartridges.
-  - In short, your complaints about my coding style will be ignored unless they are genuine improvements which I can include in the next iteration of my style.
+  - It's opinionated, possibly over/under-readable depending on your personal style.
 
+# INFORMATION
+- This app installs itself globally with configuration copied to '~/.config/masher/*'
+  - There are utilities in 'masher.CONF_D' to manage building configuration files.
+    - These are currently primitive and will improve over time.
+  - After install '<CONFIG_DIR>/CONF_D' has example profiles and actions to perform modules.
+- No stubs are installed.
+  - All access to the module is done through 'python -m masher.module'
+- The module 'masher.server' is a daemon that listens on port 29016 for mouse, gamepad, and keyboard events to send to the system as if you executed them on the appropriate devices.
+  - This requires root access when it's installed (recommended method), or root access every time it's executed which leaves you wide open to miscreants taking over your system easily.
+  - ***Because 'masher.server' needs to run as root it is unwise to install this package editable and/or in userspace‼‼***
+    - All a miscreant needs to do is edit the server.py file and reboot, as soon as that file executes their code runs as root.
+- The module 'masher.client'
