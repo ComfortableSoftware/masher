@@ -1,14 +1,5 @@
 
 
-ALL_THE_AX_KEYS = {
-    # 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱
-    "AX_ALT_SHIFT_M": "AX_ALT_SHIFT_M",
-    "AX_ESC":         "AX_ESC",
-    "AX_F6_MOVE":     "AX_F6_MOVE",
-    # ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2
-  }
-
-
 ALL_THE_CONTROLLER_KEYS = {
     # 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱
     "GA_00_DN":                 "GA_00_DN",
@@ -677,45 +668,49 @@ ALL_THE_LD_KEYS = {
 
 ALL_THE_SPECIAL_EVENT_KEYS = {
     # 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱
-    "KAX_LOAD_ACTIONS": "KAX_LOAD_ACTIONS",
-    "KAX_LOAD_PROFILE": "KAX_LOAD_PROFILE",
-    "KAX_NEXT_ACTIONS": "KAX_NEXT_ACTIONS",
-    "KAX_NEXT_PROFILE": "KAX_NEXT_PROFILE",
-    "KAX_PREV_ACTIONS": "KAX_PREV_ACTIONS",
-    "KAX_PREV_PROFILE": "KAX_PREV_PROFILE",
-    "KAX_SAVE_ACTIONS": "KAX_SAVE_ACTIONS",
-    "KAX_SAVE_PROFILE": "KAX_SAVE_PROFILE",
-    "KM_LOCKING":       "KM_LOCKING",
-    "KM_NORMAL":        "KM_NORMAL",
-    "KM_QUEUE":         "KM_QUEUE",
-    "KM_SEQUENCE":      "KM_SEQUENCE",
-    "KP_00":            "KP_00",
-    "KP_01":            "KP_01",
-    "KP_02":            "KP_02",
-    "KP_03":            "KP_03",
-    "KP_05":            "KP_05",
-    "KP_10":            "KP_10",
-    "KP_25":            "KP_25",
-    "KP_NONE":          "KP_NONE",
-    "KR_00":            "KR_00",
-    "KR_01":            "KR_01",
-    "KR_02":            "KR_02",
-    "KR_03":            "KR_03",
-    "KR_04":            "KR_04",
-    "KR_05":            "KR_05",
-    "KR_NONE":          "KR_NONE",
-
+    "KAX_LOAD_ACTIONS":      "KAX_LOAD_ACTIONS",       # re/load the current or a new *_ACTIONS_C
+    "KAX_LOAD_PROFILE":      "KAX_LOAD_PROFILE",       # re/load the current or a new *_PROFILE_C
+    "KAX_LOAD_TOML_ACTIONS": "KAX_LOAD_TOML_ACTIONS",
+    "KAX_LOAD_TOML_PROFILE": "KAX_LOAD_TOML_PROFILE",
+    "KAX_NEXT_ACTIONS":      "KAX_NEXT_ACTIONS",
+    "KAX_NEXT_PROFILE":      "KAX_NEXT_PROFILE",
+    "KAX_PREV_ACTIONS":      "KAX_PREV_ACTIONS",
+    "KAX_PREV_PROFILE":      "KAX_PREV_PROFILE",
+    "KAX_SAVE_ACTIONS":      "KAX_SAVE_ACTIONS",
+    "KAX_SAVE_PROFILE":      "KAX_SAVE_PROFILE",
+    "KAX_SAVE_TOML_ACTIONS": "KAX_SAVE_TOML_ACTIONS",
+    "KAX_SAVE_TOML_PROFILE": "KAX_SAVE_TOML_PROFILE",
+    "KM_LOCKING":            "KM_LOCKING",
+    "KM_NORMAL":             "KM_NORMAL",
+    "KM_PAUSED":             "KM_PAUSED",
+    "KM_QUEUE":              "KM_QUEUE",
+    "KM_SEQUENCE":           "KM_SEQUENCE",
+    "KM_SPECIAL":            "KM_SPECIAL",
+    "KP_00":                 "KP_00",                  # Pause number zero
+    "KP_01":                 "KP_01",
+    "KP_02":                 "KP_02",
+    "KP_03":                 "KP_03",
+    "KP_05":                 "KP_05",
+    "KP_10":                 "KP_10",
+    "KP_25":                 "KP_25",
+    "KP_NONE":               "KP_NONE",                # No pause
+    "KR_00":                 "KR_00",                  # Repeat rate zero
+    "KR_01":                 "KR_01",
+    "KR_02":                 "KR_02",
+    "KR_03":                 "KR_03",
+    "KR_04":                 "KR_04",
+    "KR_05":                 "KR_05",
+    "KR_NONE":               "KR_NONE",                # No repeat
     # ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2 ⟰2
   }
 
 
 ALL_THE_KEYS = {}
-locals().update(ALL_THE_AX_KEYS)
-locals().update(ALL_THE_CONTROLLER_KEYS)
-locals().update(ALL_THE_DEVICE_KEYS)
-locals().update(ALL_THE_NORMAL_KEYS)
-locals().update(ALL_THE_LD_KEYS)
-locals().update(ALL_THE_SPECIAL_EVENT_KEYS)
+ALL_THE_KEYS.update(ALL_THE_CONTROLLER_KEYS)
+ALL_THE_KEYS.update(ALL_THE_DEVICE_KEYS)
+ALL_THE_KEYS.update(ALL_THE_NORMAL_KEYS)
+ALL_THE_KEYS.update(ALL_THE_LD_KEYS)
+ALL_THE_KEYS.update(ALL_THE_SPECIAL_EVENT_KEYS)
 
 
 

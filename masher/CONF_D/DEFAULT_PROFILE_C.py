@@ -9,15 +9,24 @@ from CSCF.SUBM_D import (
 __DD__ = {
     "K_SHANWAN": {
         "GB_01": {
-            "K_ACTIONS": "AX_ALT_SHIFT_M",
+            "K_ACTIONS": [
+                [
+                    "AX_ALT_SHIFT_M",
+                  ],
+                [
+                    "AX_ENTER",
+                    "AX_CTRL_S"
+                  ],
+
+              ],
             "K_DESCRIPTION": "Mirror in many apps.",
             "K_INDEX": 0,
-            "K_MODE": "KM_NORMAL",
+            "K_MODE": "KM_SEQUENCE",
             "K_PAUSE": "KP_NONE",
             "K_REPEAT": "KR_NONE",
           },
         "GB_05.GB_06.GB_01": {
-            "K_ACTIONS": "AX_CTRL_Q",
+            "K_ACTIONS": ["AX_CTRL_Q"],
             "K_DESCRIPTION": "Often quit.",
             "K_INDEX": 0,
             "K_MODE": "KM_NORMAL",
@@ -25,7 +34,7 @@ __DD__ = {
             "K_REPEAT": "KR_NONE",
           },
         "GB_06.GB_09": {
-            "K_ACTIONS": "AX_F5_COPY",
+            "K_ACTIONS": ["AX_F5_COPY"],
             "K_DESCRIPTION": "Press F5, then enter.",
             "K_INDEX": 0,
             "K_MODE": "KM_SEQUENCE",
@@ -33,7 +42,7 @@ __DD__ = {
             "K_REPEAT": "KR_NONE",
           },
         "GB_05.GB_09": {
-            "K_ACTIONS": "AX_F6_MOVE",
+            "K_ACTIONS": ["AX_F6_MOVE"],
             "K_DESCRIPTION": "Press F6, then enter.",
             "K_INDEX": 0,
             "K_MODE": "KM_SEQUENCE",
@@ -46,7 +55,7 @@ __DD__ = {
 
 class createToml_C():
   # 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱ 1⟱
-  def __init__(self, *
+  def __init__(self, *,
         dictToUse_: dict = __DD__,
       ) -> None:
     # 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱ 2⟱
@@ -89,5 +98,10 @@ class createToml_C():
 
 #
 
+
+CF_TOML.dictToTomlFile(
+    dictIn_=__DD__,
+    fileURL_="P_DEFAULT.toml",
+  )
 
 #
