@@ -418,6 +418,7 @@ disable=
   # use-symbolic-message-instead,  # I0023
   # useless-suppression,  # I0021
   W0612,
+  W0401,
   bad-indentation,  # W0311
   f-string-without-interpolation,  # W1309
   invalid-name,  # C0103
