@@ -1,4 +1,4 @@
-# pylint: disable
+# pylint: disable=no-member
 
 import libevdev as LD
 
