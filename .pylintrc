@@ -417,18 +417,21 @@ disable=
   # too-many-public-methods,  # R0904
   # use-symbolic-message-instead,  # I0023
   # useless-suppression,  # I0021
-  W0612,
+  C0103,
+  C0114,
+  C0115,
+  C0116,
+  C0301,
+  C0414,
+  C3001,
+  E0602,
+  R0902,
+  W0201,
+  W0311,
   W0401,
-  bad-indentation,  # W0311
-  f-string-without-interpolation,  # W1309
-  invalid-name,  # C0103
-  line-too-long,  # C0301
-  missing-class-docstring,  # C0115,
-  missing-function-docstring,  # C0116
-  missing-module-docstring,  # C0114
-  undefined-variable,  # E0602
-  unnecessary-lambda-assignment,  # C3001
-  useless-import-alias,  # C0414
+  W0401,
+  W0612,
+  W1309,
 
 
 # Enable the message, report, category or checker with the given id(s). You can
