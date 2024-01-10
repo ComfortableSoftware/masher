@@ -1,4 +1,4 @@
-
+# pylint: disable
 
 import libevdev as LD
 
