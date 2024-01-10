@@ -417,6 +417,7 @@ disable=
   # too-many-public-methods,  # R0904
   # use-symbolic-message-instead,  # I0023
   # useless-suppression,  # I0021
+  W0612,
   bad-indentation,  # W0311
   f-string-without-interpolation,  # W1309
   invalid-name,  # C0103
