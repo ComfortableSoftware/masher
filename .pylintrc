@@ -426,6 +426,7 @@ disable=
   missing-module-docstring,  # C0114
   undefined-variable,  # E0602
   unnecessary-lambda-assignment,  # C3001
+  useless-import-alias,  # C0414
 
 
 # Enable the message, report, category or checker with the given id(s). You can
