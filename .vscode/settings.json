@@ -1,6 +1,3 @@
 {
-  "python.linting.enabled": true,
-  "python.linting.pylamaEnabled": false,
-  "python.linting.pylintEnabled": true,
-  "AllAutocomplete.showCurrentDocument": false
+  "AllAutocomplete.showCurrentDocument": true
 }
