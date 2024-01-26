@@ -5,14 +5,20 @@ from setuptools import setup
 from Cython.Build import cythonize
 
 
-"""
+# pylint: disable=W0105
+'''
 setup(
     name='Hello world app',
     ext_modules=cythonize("hello.pyx"),
 )
 
+# pylint: disable=e0611
+from hello import sayHello
 
-"""
+
+sayHello()
+
+'''
 
 
 setup(
