@@ -1,6 +1,6 @@
 
 
-import . KEYS
+from . import KEYS
 locals().update(KEYS.ALL_THE_KEYS)
 
 
